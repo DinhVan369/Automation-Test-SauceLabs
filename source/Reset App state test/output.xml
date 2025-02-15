@@ -1,0 +1,2842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.0 on win32)" generated="2024-05-12T13:11:00.247994" rpa="false" schemaversion="5">
+<suite id="s1" name="Reset App State Test" source="C:\TailieuhctapPM\Kiem thu\Thuc hanh\GK\gk\Reset App state test\reset_app_state_test.robot">
+<test id="s1-t1" name="Reset App State with standard user" line="6">
+<kw name="Open Browser to Login" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:00.410063" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-12T13:11:00.410063" elapsed="4.644710"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:05.063151" level="INFO">Current page contains element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:05.054773" elapsed="0.008378"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:00.409063" elapsed="4.654088"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-12T13:11:05.063151" elapsed="0.031882"/>
+</kw>
+<kw name="Login with standard user" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:05.096532" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${STANDARD_USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:05.096032" elapsed="0.090114"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:05.186647" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:05.186146" elapsed="0.052969"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:05.239115" level="INFO">Clicking button 'css=.btn_action'.</msg>
+<arg>css=.btn_action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:05.239115" elapsed="0.062024"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-12T13:11:07.302255" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-12T13:11:05.302139" elapsed="2.000116"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.302255" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.302255" elapsed="0.014931"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:05.095532" elapsed="2.221654"/>
+</kw>
+<kw name="Buy all Items" owner="resources">
+<kw name="Buy Sauce Labs Backpack" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.318217" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.318217" elapsed="0.029577"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-backpack</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.347794" elapsed="0.014059"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.365857" level="INFO">Element 'id:add-to-cart-sauce-labs-backpack' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.361853" elapsed="0.004004"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.365857" level="INFO">Verifying element 'id:remove-sauce-labs-backpack' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-backpack</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.365857" elapsed="0.008000"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:07.317186" elapsed="0.056671"/>
+</kw>
+<kw name="Buy Sauce Labs Bike Light" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.374858" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-bike-light'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.374858" elapsed="0.028062"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-bike-light</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.402920" elapsed="0.012591"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.419386" level="INFO">Element 'id:add-to-cart-sauce-labs-bike-light' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.415511" elapsed="0.003875"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.419709" level="INFO">Verifying element 'id:remove-sauce-labs-bike-light' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-bike-light</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.419709" elapsed="0.008712"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:07.374858" elapsed="0.053634"/>
+</kw>
+<kw name="Buy Sauce Labs Bolt T-Shirt" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.428492" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-bolt-t-shirt'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.428492" elapsed="0.030298"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-bolt-t-shirt</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.458964" elapsed="0.011614"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.474153" level="INFO">Element 'id:add-to-cart-sauce-labs-bolt-t-shirt' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.470578" elapsed="0.003575"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.474153" level="INFO">Verifying element 'id:remove-sauce-labs-bolt-t-shirt' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-bolt-t-shirt</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.474153" elapsed="0.007608"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:07.428492" elapsed="0.053279"/>
+</kw>
+<kw name="Buy Sauce Labs Fleece Jacket" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.481771" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.481771" elapsed="0.028764"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-fleece-jacket</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.510699" elapsed="0.011346"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.525447" level="INFO">Element 'id:add-to-cart-sauce-labs-fleece-jacket' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.522206" elapsed="0.003298"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.525581" level="INFO">Verifying element 'id:remove-sauce-labs-fleece-jacket' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-fleece-jacket</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.525581" elapsed="0.007284"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:07.481771" elapsed="0.051192"/>
+</kw>
+<kw name="Buy Sauce Labs Onesie" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.533039" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-onesie'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.533039" elapsed="0.027857"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-onesie</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.561191" elapsed="0.010617"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.575752" level="INFO">Element 'id:add-to-cart-sauce-labs-onesie' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.572190" elapsed="0.003562"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.575752" level="INFO">Verifying element 'id:remove-sauce-labs-onesie' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-onesie</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.575752" elapsed="0.008006"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:07.533039" elapsed="0.050719"/>
+</kw>
+<kw name="Buy Test.allTheThings() T-Shirt (Red)" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.583758" level="INFO">Clicking button 'id:add-to-cart-test.allthethings()-t-shirt-(red)'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.583758" elapsed="0.027000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-test.allthethings()-t-shirt-(red)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.610758" elapsed="0.010006"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.624758" level="INFO">Element 'id:add-to-cart-test.allthethings()-t-shirt-(red)' did not exist.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.621762" elapsed="0.002996"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.624758" level="INFO">Verifying element 'id:remove-test.allthethings()-t-shirt-(red)' contains exact text 'Remove'.</msg>
+<arg>id:remove-test.allthethings()-t-shirt-(red)</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.624758" elapsed="0.007000"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:07.583758" elapsed="0.048000"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:07.317186" elapsed="0.314572"/>
+</kw>
+<kw name="Cart Item Quantity" owner="resources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.632762" level="INFO">Verifying element 'xpath://*[@id="shopping_cart_container"]/a/span' contains exact text '6'.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<arg>${quantity}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.631758" elapsed="0.010004"/>
+</kw>
+<arg>6</arg>
+<status status="PASS" start="2024-05-12T13:11:07.631758" elapsed="0.010004"/>
+</kw>
+<kw name="Reset App State" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.642762" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.642762" elapsed="0.027923"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=reset_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.670685" elapsed="0.224728"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.895413" level="INFO">Clicking element 'id=reset_sidebar_link'.</msg>
+<arg>id=reset_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.895413" elapsed="0.023034"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:07.642762" elapsed="0.275685"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.922527" level="INFO">Element 'xpath://*[@id="shopping_cart_container"]/a/span' did not exist.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.918447" elapsed="0.005405"/>
+</kw>
+<kw name="Go to cart" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.923852" level="INFO">Clicking element 'xpath://*[@id="shopping_cart_container"]/a'.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.923852" elapsed="0.029756"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.953608" level="INFO">Verifying element 'xpath://*[@id="header_container"]/div[2]/span' contains exact text 'Your Cart'.</msg>
+<arg>xpath://*[@id="header_container"]/div[2]/span</arg>
+<arg>Your Cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.953608" elapsed="0.012072"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.971676" level="INFO">Current page contains element 'id:checkout'.</msg>
+<arg>id:checkout</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.966677" elapsed="0.004999"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.977676" level="INFO">Current page contains element 'id:continue-shopping'.</msg>
+<arg>id:continue-shopping</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.971676" elapsed="0.006000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.983681" level="INFO">Current page contains text 'QTY'.</msg>
+<arg>QTY</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.977676" elapsed="0.006005"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:07.990709" level="INFO">Current page contains text 'Description'.</msg>
+<arg>Description</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.983681" elapsed="0.007028"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:07.923852" elapsed="0.066857"/>
+</kw>
+<kw name="Verify cart is empty" owner="resources">
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:08.002709" level="INFO">Current page does not contain text 'Sauce Labs Backpack'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:07.991709" elapsed="0.011000"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:08.010712" level="INFO">Current page does not contain text 'carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:08.002709" elapsed="0.008003"/>
+</kw>
+<arg>${ITEMS}[0]</arg>
+<arg>${ITEM1_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:07.991709" elapsed="0.019003"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:08.019709" level="INFO">Current page does not contain text 'Sauce Labs Bike Light'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:08.011713" elapsed="0.009000"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:08.028712" level="INFO">Current page does not contain text 'A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:08.020713" elapsed="0.007999"/>
+</kw>
+<arg>${ITEMS}[1]</arg>
+<arg>${ITEM2_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:08.011713" elapsed="0.016999"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:08.037819" level="INFO">Current page does not contain text 'Sauce Labs Bolt T-Shirt'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:08.029713" elapsed="0.008106"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:08.046815" level="INFO">Current page does not contain text 'Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:08.037819" elapsed="0.008996"/>
+</kw>
+<arg>${ITEMS}[2]</arg>
+<arg>${ITEM3_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:08.028712" elapsed="0.018103"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:08.056363" level="INFO">Current page does not contain text 'Sauce Labs Fleece Jacket'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:08.046815" elapsed="0.009548"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:08.074710" level="INFO">Current page does not contain text 'It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:08.056363" elapsed="0.018347"/>
+</kw>
+<arg>${ITEMS}[3]</arg>
+<arg>${ITEM4_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:08.046815" elapsed="0.027895"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:08.085320" level="INFO">Current page does not contain text 'Sauce Labs Onesie'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:08.074710" elapsed="0.010610"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:08.096617" level="INFO">Current page does not contain text 'Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:08.085320" elapsed="0.011649"/>
+</kw>
+<arg>${ITEMS}[4]</arg>
+<arg>${ITEM5_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:08.074710" elapsed="0.022380"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:08.106467" level="INFO">Current page does not contain text 'Test.allTheThings() T-Shirt (Red)'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:08.097114" elapsed="0.009353"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:08.115937" level="INFO">Current page does not contain text 'This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:08.106467" elapsed="0.009470"/>
+</kw>
+<arg>${ITEMS}[5]</arg>
+<arg>${ITEM6_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:08.097114" elapsed="0.018823"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:08.120987" level="INFO">Element 'xpath://*[@id="shopping_cart_container"]/a/span' did not exist.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:08.116937" elapsed="0.004050"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:07.990709" elapsed="0.130278"/>
+</kw>
+<kw name="Continue Shopping" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:08.122179" level="INFO">Clicking button 'id:continue-shopping'.</msg>
+<arg>id:continue-shopping</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:08.122179" elapsed="0.036706"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-12T13:11:10.159062" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-12T13:11:08.158885" elapsed="2.000177"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.159062" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.159062" elapsed="0.010941"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:08.121991" elapsed="2.048012"/>
+</kw>
+<kw name="Verify all Add button" owner="resources">
+<kw name="Verify Add button of Sauce Labs Backpack" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.174998" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.170999" elapsed="0.003999"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.174998" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-backpack' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.174998" elapsed="0.006004"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:10.170999" elapsed="0.011003"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Bike Light" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.184998" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-bike-light'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.182002" elapsed="0.002996"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.184998" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-bike-light' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.184998" elapsed="0.006005"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:10.182002" elapsed="0.010000"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Bolt T-Shirt" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.195002" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-bolt-t-shirt'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.192002" elapsed="0.003000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.195002" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-bolt-t-shirt' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.195002" elapsed="0.006000"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:10.192002" elapsed="0.009000"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Fleece Jacket" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.205002" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.202003" elapsed="0.002999"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.205002" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-fleece-jacket' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.205002" elapsed="0.006561"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:10.201002" elapsed="0.010561"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Onesie" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.214559" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-onesie'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.211563" elapsed="0.002996"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.215563" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-onesie' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.214559" elapsed="0.007000"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:10.211563" elapsed="0.009996"/>
+</kw>
+<kw name="Verify Add button of Test.allTheThings() T-Shirt (Red)" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.225564" level="INFO">Current page contains element 'id:add-to-cart-test.allthethings()-t-shirt-(red)'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.221559" elapsed="0.004005"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.225564" level="INFO">Verifying element 'id:add-to-cart-test.allthethings()-t-shirt-(red)' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.225564" elapsed="0.008995"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:10.221559" elapsed="0.013000"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:10.170999" elapsed="0.063560"/>
+</kw>
+<kw name="Logout the page" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.235563" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.235563" elapsed="0.024098"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=logout_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.259661" elapsed="0.222918"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:10.482719" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
+<arg>id=logout_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.482719" elapsed="0.023228"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.506270" elapsed="0.005381"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:10.234559" elapsed="0.277214"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-12T13:11:10.512177" elapsed="2.112881"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:00.409063" elapsed="12.216860"/>
+</test>
+<test id="s1-t2" name="Reset App State with performane glitch user" line="24">
+<kw name="Open Browser to Login" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:12.626934" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-12T13:11:12.626934" elapsed="5.482187"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:18.117047" level="INFO">Current page contains element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:18.109121" elapsed="0.007926"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:12.626934" elapsed="5.490113"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-12T13:11:18.117047" elapsed="0.033385"/>
+</kw>
+<kw name="Login with performance glitch user" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:18.152828" level="INFO">Typing text 'performance_glitch_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${PERFORMANCE_GLITCH_USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:18.151811" elapsed="0.076840"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:18.229149" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:18.228651" elapsed="0.052181"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:18.281893" level="INFO">Clicking button 'css=.btn_action'.</msg>
+<arg>css=.btn_action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:18.280832" elapsed="5.067473"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-12T13:11:28.348656" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-12T13:11:23.348305" elapsed="5.000351"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.348656" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.348656" elapsed="0.015702"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:18.151811" elapsed="10.212547"/>
+</kw>
+<kw name="Buy all Items" owner="resources">
+<kw name="Buy Sauce Labs Backpack" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.364736" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.364736" elapsed="0.029980"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-backpack</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.394716" elapsed="0.014750"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.413405" level="INFO">Element 'id:add-to-cart-sauce-labs-backpack' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.409466" elapsed="0.003939"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.413405" level="INFO">Verifying element 'id:remove-sauce-labs-backpack' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-backpack</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.413405" elapsed="0.007389"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:28.364736" elapsed="0.056058"/>
+</kw>
+<kw name="Buy Sauce Labs Bike Light" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.420794" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-bike-light'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.420794" elapsed="0.027651"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-bike-light</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.448445" elapsed="0.012984"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.465206" level="INFO">Element 'id:add-to-cart-sauce-labs-bike-light' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.461429" elapsed="0.003777"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.465206" level="INFO">Verifying element 'id:remove-sauce-labs-bike-light' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-bike-light</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.465206" elapsed="0.007156"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:28.420794" elapsed="0.051568"/>
+</kw>
+<kw name="Buy Sauce Labs Bolt T-Shirt" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.472362" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-bolt-t-shirt'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.472362" elapsed="0.027666"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-bolt-t-shirt</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.500028" elapsed="0.011075"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.514818" level="INFO">Element 'id:add-to-cart-sauce-labs-bolt-t-shirt' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.511103" elapsed="0.003715"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.514818" level="INFO">Verifying element 'id:remove-sauce-labs-bolt-t-shirt' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-bolt-t-shirt</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.514818" elapsed="0.007707"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:28.472362" elapsed="0.050163"/>
+</kw>
+<kw name="Buy Sauce Labs Fleece Jacket" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.522525" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.522525" elapsed="0.027369"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-fleece-jacket</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.549894" elapsed="0.010524"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.564128" level="INFO">Element 'id:add-to-cart-sauce-labs-fleece-jacket' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.560418" elapsed="0.003710"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.564633" level="INFO">Verifying element 'id:remove-sauce-labs-fleece-jacket' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-fleece-jacket</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.564128" elapsed="0.007282"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:28.522525" elapsed="0.048885"/>
+</kw>
+<kw name="Buy Sauce Labs Onesie" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.571410" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-onesie'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.571410" elapsed="0.030573"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-onesie</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.601983" elapsed="0.011607"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.617487" level="INFO">Element 'id:add-to-cart-sauce-labs-onesie' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.613590" elapsed="0.003897"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.617988" level="INFO">Verifying element 'id:remove-sauce-labs-onesie' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-onesie</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.617487" elapsed="0.007408"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:28.571410" elapsed="0.053485"/>
+</kw>
+<kw name="Buy Test.allTheThings() T-Shirt (Red)" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.625400" level="INFO">Clicking button 'id:add-to-cart-test.allthethings()-t-shirt-(red)'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.625400" elapsed="0.029466"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-test.allthethings()-t-shirt-(red)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.654866" elapsed="0.011425"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.669865" level="INFO">Element 'id:add-to-cart-test.allthethings()-t-shirt-(red)' did not exist.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.666291" elapsed="0.003574"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.669865" level="INFO">Verifying element 'id:remove-test.allthethings()-t-shirt-(red)' contains exact text 'Remove'.</msg>
+<arg>id:remove-test.allthethings()-t-shirt-(red)</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.669865" elapsed="0.007402"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:28.624895" elapsed="0.052372"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:28.364736" elapsed="0.312531"/>
+</kw>
+<kw name="Cart Item Quantity" owner="resources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.677267" level="INFO">Verifying element 'xpath://*[@id="shopping_cart_container"]/a/span' contains exact text '6'.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<arg>${quantity}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.677267" elapsed="0.010731"/>
+</kw>
+<arg>6</arg>
+<status status="PASS" start="2024-05-12T13:11:28.677267" elapsed="0.010731"/>
+</kw>
+<kw name="Reset App State" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.688483" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.688483" elapsed="0.030955"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=reset_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.719438" elapsed="0.223727"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.943165" level="INFO">Clicking element 'id=reset_sidebar_link'.</msg>
+<arg>id=reset_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.943165" elapsed="0.021728"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:28.688483" elapsed="0.276410"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.970689" level="INFO">Element 'xpath://*[@id="shopping_cart_container"]/a/span' did not exist.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.964893" elapsed="0.005796"/>
+</kw>
+<kw name="Go to cart" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:28.971576" level="INFO">Clicking element 'xpath://*[@id="shopping_cart_container"]/a'.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:28.971576" elapsed="0.031833"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.004756" level="INFO">Verifying element 'xpath://*[@id="header_container"]/div[2]/span' contains exact text 'Your Cart'.</msg>
+<arg>xpath://*[@id="header_container"]/div[2]/span</arg>
+<arg>Your Cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.004260" elapsed="0.013575"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.023669" level="INFO">Current page contains element 'id:checkout'.</msg>
+<arg>id:checkout</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.018337" elapsed="0.005332"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.029504" level="INFO">Current page contains element 'id:continue-shopping'.</msg>
+<arg>id:continue-shopping</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.023669" elapsed="0.005835"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.036819" level="INFO">Current page contains text 'QTY'.</msg>
+<arg>QTY</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.029504" elapsed="0.007315"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.043771" level="INFO">Current page contains text 'Description'.</msg>
+<arg>Description</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.036819" elapsed="0.006952"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:28.970689" elapsed="0.073641"/>
+</kw>
+<kw name="Verify cart is empty" owner="resources">
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.057338" level="INFO">Current page does not contain text 'Sauce Labs Backpack'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.044935" elapsed="0.012403"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.067397" level="INFO">Current page does not contain text 'carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.057338" elapsed="0.010059"/>
+</kw>
+<arg>${ITEMS}[0]</arg>
+<arg>${ITEM1_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:29.044935" elapsed="0.022462"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.080009" level="INFO">Current page does not contain text 'Sauce Labs Bike Light'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.067897" elapsed="0.012112"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.090275" level="INFO">Current page does not contain text 'A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.080510" elapsed="0.009765"/>
+</kw>
+<arg>${ITEMS}[1]</arg>
+<arg>${ITEM2_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:29.067397" elapsed="0.023051"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.100781" level="INFO">Current page does not contain text 'Sauce Labs Bolt T-Shirt'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.090448" elapsed="0.010333"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.111719" level="INFO">Current page does not contain text 'Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.100781" elapsed="0.010938"/>
+</kw>
+<arg>${ITEMS}[2]</arg>
+<arg>${ITEM3_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:29.090448" elapsed="0.021271"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.122970" level="INFO">Current page does not contain text 'Sauce Labs Fleece Jacket'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.111719" elapsed="0.011251"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.133674" level="INFO">Current page does not contain text 'It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.122970" elapsed="0.010704"/>
+</kw>
+<arg>${ITEMS}[3]</arg>
+<arg>${ITEM4_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:29.111719" elapsed="0.022460"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.143942" level="INFO">Current page does not contain text 'Sauce Labs Onesie'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.134179" elapsed="0.009763"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.153391" level="INFO">Current page does not contain text 'Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.143942" elapsed="0.009449"/>
+</kw>
+<arg>${ITEMS}[4]</arg>
+<arg>${ITEM5_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:29.134179" elapsed="0.019212"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.163240" level="INFO">Current page does not contain text 'Test.allTheThings() T-Shirt (Red)'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.153896" elapsed="0.009344"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.176177" level="INFO">Current page does not contain text 'This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.163240" elapsed="0.012937"/>
+</kw>
+<arg>${ITEMS}[5]</arg>
+<arg>${ITEM6_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:29.153391" elapsed="0.022786"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.180204" level="INFO">Element 'xpath://*[@id="shopping_cart_container"]/a/span' did not exist.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.176678" elapsed="0.003526"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:29.044743" elapsed="0.135461"/>
+</kw>
+<kw name="Continue Shopping" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:29.180935" level="INFO">Clicking button 'id:continue-shopping'.</msg>
+<arg>id:continue-shopping</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:29.180935" elapsed="5.037194"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-12T13:11:36.218265" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-12T13:11:34.218129" elapsed="2.000136"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.218265" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.218265" elapsed="0.011048"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:29.180935" elapsed="7.048378"/>
+</kw>
+<kw name="Verify all Add button" owner="resources">
+<kw name="Verify Add button of Sauce Labs Backpack" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.233445" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.230335" elapsed="0.003110"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.233445" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-backpack' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.233445" elapsed="0.007464"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:36.229313" elapsed="0.011596"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Bike Light" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.244467" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-bike-light'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.240909" elapsed="0.003558"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.244467" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-bike-light' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.244467" elapsed="0.007198"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:36.240909" elapsed="0.010756"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Bolt T-Shirt" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.255124" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-bolt-t-shirt'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.251665" elapsed="0.003459"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.255124" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-bolt-t-shirt' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.255124" elapsed="0.006656"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:36.251665" elapsed="0.010115"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Fleece Jacket" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.265472" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.261780" elapsed="0.003692"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.265472" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-fleece-jacket' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.265472" elapsed="0.006988"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:36.261780" elapsed="0.010680"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Onesie" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.275936" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-onesie'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.272460" elapsed="0.003476"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.275936" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-onesie' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.275936" elapsed="0.006829"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:36.272460" elapsed="0.010305"/>
+</kw>
+<kw name="Verify Add button of Test.allTheThings() T-Shirt (Red)" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.286166" level="INFO">Current page contains element 'id:add-to-cart-test.allthethings()-t-shirt-(red)'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.282765" elapsed="0.003401"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.286166" level="INFO">Verifying element 'id:add-to-cart-test.allthethings()-t-shirt-(red)' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.286166" elapsed="0.006650"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:36.282765" elapsed="0.010051"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:36.229313" elapsed="0.063503"/>
+</kw>
+<kw name="Logout the page" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.293174" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.293174" elapsed="0.023381"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=logout_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.316555" elapsed="0.223036"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:36.539591" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
+<arg>id=logout_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.539591" elapsed="0.022306"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.561897" elapsed="0.005067"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:36.293174" elapsed="0.273790"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-12T13:11:36.566964" elapsed="2.098925"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:12.625923" elapsed="26.041027"/>
+</test>
+<test id="s1-t3" name="Reset App State with visual user" line="42">
+<kw name="Open Browser to Login" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:38.667894" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-12T13:11:38.667894" elapsed="5.233084"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:43.907941" level="INFO">Current page contains element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:43.900978" elapsed="0.006963"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:38.667894" elapsed="5.240047"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-12T13:11:43.908946" elapsed="0.024467"/>
+</kw>
+<kw name="Login with visual user" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:43.933448" level="INFO">Typing text 'visual_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${VISUAL_USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:43.933448" elapsed="0.075645"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:44.009591" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:44.009093" elapsed="0.053506"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:44.062599" level="INFO">Clicking button 'css=.btn_action'.</msg>
+<arg>css=.btn_action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:44.062599" elapsed="0.060255"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-12T13:11:46.123265" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-12T13:11:44.122854" elapsed="2.000411"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.123265" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.123265" elapsed="0.016515"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:43.933448" elapsed="2.206332"/>
+</kw>
+<kw name="Buy all Items" owner="resources">
+<kw name="Buy Sauce Labs Backpack" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.139780" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.139780" elapsed="0.030689"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-backpack</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.170469" elapsed="0.014452"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.188924" level="INFO">Element 'id:add-to-cart-sauce-labs-backpack' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.184921" elapsed="0.004003"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.188924" level="INFO">Verifying element 'id:remove-sauce-labs-backpack' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-backpack</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.188924" elapsed="0.009001"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:46.139780" elapsed="0.058145"/>
+</kw>
+<kw name="Buy Sauce Labs Bike Light" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.197925" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-bike-light'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.197925" elapsed="0.028288"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-bike-light</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.226213" elapsed="0.013929"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.244111" level="INFO">Element 'id:add-to-cart-sauce-labs-bike-light' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.240142" elapsed="0.003969"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.244111" level="INFO">Verifying element 'id:remove-sauce-labs-bike-light' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-bike-light</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.244111" elapsed="0.007810"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:46.197925" elapsed="0.053996"/>
+</kw>
+<kw name="Buy Sauce Labs Bolt T-Shirt" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.252423" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-bolt-t-shirt'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.252423" elapsed="0.027296"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-bolt-t-shirt</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.279719" elapsed="0.010361"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.294075" level="INFO">Element 'id:add-to-cart-sauce-labs-bolt-t-shirt' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.291080" elapsed="0.002995"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.294075" level="INFO">Verifying element 'id:remove-sauce-labs-bolt-t-shirt' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-bolt-t-shirt</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.294075" elapsed="0.007214"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:46.251921" elapsed="0.049368"/>
+</kw>
+<kw name="Buy Sauce Labs Fleece Jacket" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.301789" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.301789" elapsed="0.026446"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-fleece-jacket</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.328235" elapsed="0.011996"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.344097" level="INFO">Element 'id:add-to-cart-sauce-labs-fleece-jacket' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.340231" elapsed="0.003950"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.344393" level="INFO">Verifying element 'id:remove-sauce-labs-fleece-jacket' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-fleece-jacket</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.344327" elapsed="0.006961"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:46.301289" elapsed="0.049999"/>
+</kw>
+<kw name="Buy Sauce Labs Onesie" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.351955" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-onesie'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.351885" elapsed="0.027948"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-onesie</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.380376" elapsed="0.010813"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.394875" level="INFO">Element 'id:add-to-cart-sauce-labs-onesie' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.391690" elapsed="0.003185"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.394875" level="INFO">Verifying element 'id:remove-sauce-labs-onesie' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-onesie</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.394875" elapsed="0.006933"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:46.351288" elapsed="0.051020"/>
+</kw>
+<kw name="Buy Test.allTheThings() T-Shirt (Red)" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.402445" level="INFO">Clicking button 'id:add-to-cart-test.allthethings()-t-shirt-(red)'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.402445" elapsed="0.028648"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-test.allthethings()-t-shirt-(red)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.431093" elapsed="0.010981"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.445625" level="INFO">Element 'id:add-to-cart-test.allthethings()-t-shirt-(red)' did not exist.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.442074" elapsed="0.003551"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.446125" level="INFO">Verifying element 'id:remove-test.allthethings()-t-shirt-(red)' contains exact text 'Remove'.</msg>
+<arg>id:remove-test.allthethings()-t-shirt-(red)</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.445625" elapsed="0.007354"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:46.402445" elapsed="0.051034"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:46.139780" elapsed="0.313699"/>
+</kw>
+<kw name="Cart Item Quantity" owner="resources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.454251" level="INFO">Verifying element 'xpath://*[@id="shopping_cart_container"]/a/span' contains exact text '6'.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<arg>${quantity}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.454032" elapsed="0.009552"/>
+</kw>
+<arg>6</arg>
+<status status="PASS" start="2024-05-12T13:11:46.453479" elapsed="0.010105"/>
+</kw>
+<kw name="Reset App State" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.464320" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.464194" elapsed="0.029602"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=reset_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.493796" elapsed="0.225693"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.719990" level="INFO">Clicking element 'id=reset_sidebar_link'.</msg>
+<arg>id=reset_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.719990" elapsed="0.023029"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:46.463922" elapsed="0.279097"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.749692" level="INFO">Element 'xpath://*[@id="shopping_cart_container"]/a/span' did not exist.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.744047" elapsed="0.005645"/>
+</kw>
+<kw name="Go to cart" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.750752" level="INFO">Clicking element 'xpath://*[@id="shopping_cart_container"]/a'.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.750752" elapsed="0.048729"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.800363" level="INFO">Verifying element 'xpath://*[@id="header_container"]/div[2]/span' contains exact text 'Your Cart'.</msg>
+<arg>xpath://*[@id="header_container"]/div[2]/span</arg>
+<arg>Your Cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.799930" elapsed="0.013878"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.820036" level="INFO">Current page contains element 'id:checkout'.</msg>
+<arg>id:checkout</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.813808" elapsed="0.006754"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.826668" level="INFO">Current page contains element 'id:continue-shopping'.</msg>
+<arg>id:continue-shopping</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.820620" elapsed="0.006115"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.833625" level="INFO">Current page contains text 'QTY'.</msg>
+<arg>QTY</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.826735" elapsed="0.006890"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.840252" level="INFO">Current page contains text 'Description'.</msg>
+<arg>Description</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.833625" elapsed="0.006627"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:46.750527" elapsed="0.089725"/>
+</kw>
+<kw name="Verify Checkout button position changed" owner="resources">
+<kw name="Get Checkout Button Position" owner="resources">
+<kw name="Get Horizontal Position" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.851497" level="INFO">${checkout_btn} = 1828</msg>
+<var>${checkout_btn}</var>
+<arg>xpath://*[@id="checkout"]</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.841106" elapsed="0.010391"/>
+</kw>
+<return>
+<value>${checkout_btn}</value>
+<status status="PASS" start="2024-05-12T13:11:46.851613" elapsed="0.000014"/>
+</return>
+<msg time="2024-05-12T13:11:46.851691" level="INFO">${visual_checkout_position} = 1828</msg>
+<var>${visual_checkout_position}</var>
+<status status="PASS" start="2024-05-12T13:11:46.841106" elapsed="0.010585"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>int(${checkout_position})</arg>
+<arg>int(${visual_checkout_position})</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.851691" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:46.840908" elapsed="0.010783"/>
+</kw>
+<kw name="Verify cart is empty" owner="resources">
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.864180" level="INFO">Current page does not contain text 'Sauce Labs Backpack'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.852745" elapsed="0.011435"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.873542" level="INFO">Current page does not contain text 'carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.864180" elapsed="0.009362"/>
+</kw>
+<arg>${ITEMS}[0]</arg>
+<arg>${ITEM1_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:46.852618" elapsed="0.020924"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.883432" level="INFO">Current page does not contain text 'Sauce Labs Bike Light'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.874043" elapsed="0.009389"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.893767" level="INFO">Current page does not contain text 'A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.883432" elapsed="0.010335"/>
+</kw>
+<arg>${ITEMS}[1]</arg>
+<arg>${ITEM2_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:46.873542" elapsed="0.020225"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.903635" level="INFO">Current page does not contain text 'Sauce Labs Bolt T-Shirt'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.894268" elapsed="0.009427"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.912769" level="INFO">Current page does not contain text 'Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.903695" elapsed="0.009074"/>
+</kw>
+<arg>${ITEMS}[2]</arg>
+<arg>${ITEM3_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:46.893767" elapsed="0.019002"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.922894" level="INFO">Current page does not contain text 'Sauce Labs Fleece Jacket'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.913269" elapsed="0.009625"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.931287" level="INFO">Current page does not contain text 'It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.922894" elapsed="0.008393"/>
+</kw>
+<arg>${ITEMS}[3]</arg>
+<arg>${ITEM4_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:46.912769" elapsed="0.018518"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.941263" level="INFO">Current page does not contain text 'Sauce Labs Onesie'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.932426" elapsed="0.008837"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.950432" level="INFO">Current page does not contain text 'Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.941263" elapsed="0.009169"/>
+</kw>
+<arg>${ITEMS}[4]</arg>
+<arg>${ITEM5_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:46.931287" elapsed="0.019145"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.959085" level="INFO">Current page does not contain text 'Test.allTheThings() T-Shirt (Red)'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.950938" elapsed="0.009147"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.968193" level="INFO">Current page does not contain text 'This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.960085" elapsed="0.008108"/>
+</kw>
+<arg>${ITEMS}[5]</arg>
+<arg>${ITEM6_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:46.950432" elapsed="0.017761"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.971441" level="INFO">Element 'xpath://*[@id="shopping_cart_container"]/a/span' did not exist.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.968193" elapsed="0.003248"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:46.852430" elapsed="0.119011"/>
+</kw>
+<kw name="Continue Shopping" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:46.972507" level="INFO">Clicking button 'id:continue-shopping'.</msg>
+<arg>id:continue-shopping</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:46.972507" elapsed="0.036710"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-12T13:11:49.010166" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-12T13:11:47.009718" elapsed="2.000448"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.010166" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.010166" elapsed="0.009783"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:46.972507" elapsed="2.047442"/>
+</kw>
+<kw name="Verify Cart Icon position changed" owner="resources">
+<kw name="Get Cart Icon Position" owner="resources">
+<kw name="Get Horizontal Position" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.030729" level="INFO">${cart_icon} = 1785</msg>
+<var>${cart_icon}</var>
+<arg>xpath://*[@id="shopping_cart_container"]</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.020960" elapsed="0.009769"/>
+</kw>
+<return>
+<value>${cart_icon}</value>
+<status status="PASS" start="2024-05-12T13:11:49.030729" elapsed="0.000000"/>
+</return>
+<msg time="2024-05-12T13:11:49.030729" level="INFO">${visual_cart_icon} = 1785</msg>
+<var>${visual_cart_icon}</var>
+<status status="PASS" start="2024-05-12T13:11:49.020960" elapsed="0.009769"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>int(${cart_icon})</arg>
+<arg>int(${visual_cart_icon})</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.030729" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:49.020960" elapsed="0.009769"/>
+</kw>
+<kw name="Verify all Add button" owner="resources">
+<kw name="Verify Add button of Sauce Labs Backpack" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.034733" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.031729" elapsed="0.003004"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.034733" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-backpack' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.034733" elapsed="0.006476"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:49.030729" elapsed="0.010480"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Bike Light" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.044965" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-bike-light'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.042217" elapsed="0.002748"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.045980" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-bike-light' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.045980" elapsed="0.006502"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:49.042217" elapsed="0.010265"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Bolt T-Shirt" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.055775" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-bolt-t-shirt'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.052482" elapsed="0.003293"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.055775" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-bolt-t-shirt' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.055775" elapsed="0.006768"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:49.052482" elapsed="0.010061"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Fleece Jacket" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.066538" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.063543" elapsed="0.002995"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.066538" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-fleece-jacket' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.066538" elapsed="0.007001"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:49.062543" elapsed="0.010996"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Onesie" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.076539" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-onesie'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.073539" elapsed="0.003000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.076539" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-onesie' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.076539" elapsed="0.006868"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:49.073539" elapsed="0.009868"/>
+</kw>
+<kw name="Verify Add button of Test.allTheThings() T-Shirt (Red)" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.087486" level="INFO">Current page contains element 'id:add-to-cart-test.allthethings()-t-shirt-(red)'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.084407" elapsed="0.003079"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.087486" level="INFO">Verifying element 'id:add-to-cart-test.allthethings()-t-shirt-(red)' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.087486" elapsed="0.007020"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:49.083407" elapsed="0.011099"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:49.030729" elapsed="0.063777"/>
+</kw>
+<kw name="Logout the page" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.095506" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.094506" elapsed="0.024543"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=logout_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.119049" elapsed="0.219780"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:49.338829" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
+<arg>id=logout_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.338829" elapsed="0.023488"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.363318" elapsed="0.004506"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:49.094506" elapsed="0.273318"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-12T13:11:49.368823" elapsed="2.109382"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:38.666950" elapsed="12.811255"/>
+</test>
+<test id="s1-t4" name="Reset App State with problem user" line="62">
+<kw name="Open Browser to Login" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:51.479069" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-12T13:11:51.479069" elapsed="5.598208"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:57.085633" level="INFO">Current page contains element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:57.078278" elapsed="0.007355"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:51.479069" elapsed="5.606564"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-12T13:11:57.086632" elapsed="0.028212"/>
+</kw>
+<kw name="Login with problem user" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:57.115838" level="INFO">Typing text 'problem_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${PROBLEM_USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:57.115838" elapsed="0.077669"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:57.193507" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:57.193507" elapsed="0.050875"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:57.244382" level="INFO">Clicking button 'css=.btn_action'.</msg>
+<arg>css=.btn_action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:57.244382" elapsed="0.062580"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-12T13:11:59.308472" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-12T13:11:57.307965" elapsed="2.000507"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.308472" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.308472" elapsed="0.014341"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:57.115416" elapsed="2.207397"/>
+</kw>
+<kw name="Buy All Items (problem user)" owner="resources">
+<kw name="Buy Sauce Labs Backpack" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.323813" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.323813" elapsed="0.029594"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-backpack</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.353407" elapsed="0.013870"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.371277" level="INFO">Element 'id:add-to-cart-sauce-labs-backpack' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.367277" elapsed="0.004000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.371277" level="INFO">Verifying element 'id:remove-sauce-labs-backpack' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-backpack</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.371277" elapsed="0.007007"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:59.322813" elapsed="0.055471"/>
+</kw>
+<kw name="Buy Sauce Labs Bike Light" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.379282" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-bike-light'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.379282" elapsed="0.026308"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-bike-light</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.406589" elapsed="0.012939"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.423533" level="INFO">Element 'id:add-to-cart-sauce-labs-bike-light' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.419528" elapsed="0.004005"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.423533" level="INFO">Verifying element 'id:remove-sauce-labs-bike-light' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-bike-light</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.423533" elapsed="0.007001"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:59.379282" elapsed="0.051252"/>
+</kw>
+<kw name="Buy Sauce Labs Bolt T-Shirt (problem user)" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.430534" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-bolt-t-shirt'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.430534" elapsed="0.027022"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.465713" level="INFO">Element 'id:add-to-cart-sauce-labs-bolt-t-shirt' is displayed.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.457556" elapsed="0.008157"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.471708" level="INFO">Element 'id:remove-sauce-labs-bolt-t-shirt' did not exist.</msg>
+<arg>id:remove-sauce-labs-bolt-t-shirt</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.466711" elapsed="0.004997"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:59.430534" elapsed="0.041174"/>
+</kw>
+<kw name="Buy Sauce Labs Fleece Jacket (problem user)" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.471708" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.471708" elapsed="0.027000"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.507205" level="INFO">Element 'id:add-to-cart-sauce-labs-fleece-jacket' is displayed.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.498708" elapsed="0.008497"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.512210" level="INFO">Element 'id:remove-sauce-labs-fleece-jacket' did not exist.</msg>
+<arg>id:remove-sauce-labs-fleece-jacket</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.507205" elapsed="0.006001"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:59.471708" elapsed="0.041498"/>
+</kw>
+<kw name="Buy Sauce Labs Onesie" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.513206" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-onesie'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.513206" elapsed="0.028010"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-onesie</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.541216" elapsed="0.011022"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.555241" level="INFO">Element 'id:add-to-cart-sauce-labs-onesie' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.552238" elapsed="0.003003"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.556237" level="INFO">Verifying element 'id:remove-sauce-labs-onesie' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-onesie</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.555241" elapsed="0.007002"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:59.513206" elapsed="0.049037"/>
+</kw>
+<kw name="Buy Test.allTheThings() T-Shirt (Red) (problem user)" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.563237" level="INFO">Clicking button 'id:add-to-cart-test.allthethings()-t-shirt-(red)'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.563237" elapsed="0.025609"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.597848" level="INFO">Element 'id:add-to-cart-test.allthethings()-t-shirt-(red)' is displayed.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.588846" elapsed="0.009002"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.602851" level="INFO">Element 'id:remove-test.allthethings()-t-shirt-(red)' did not exist.</msg>
+<arg>id:remove-test.allthethings()-t-shirt-(red)</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.597848" elapsed="0.005003"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:59.563237" elapsed="0.039614"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:59.322813" elapsed="0.280038"/>
+</kw>
+<kw name="Cart Item Quantity" owner="resources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.603846" level="INFO">Verifying element 'xpath://*[@id="shopping_cart_container"]/a/span' contains exact text '3'.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<arg>${quantity}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.603846" elapsed="0.009000"/>
+</kw>
+<arg>3</arg>
+<status status="PASS" start="2024-05-12T13:11:59.603846" elapsed="0.009000"/>
+</kw>
+<kw name="Reset App State" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.612846" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.612846" elapsed="0.029547"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=reset_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.642393" elapsed="0.223015"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.865408" level="INFO">Clicking element 'id=reset_sidebar_link'.</msg>
+<arg>id=reset_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.865408" elapsed="0.021588"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:59.612846" elapsed="0.274150"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.892348" level="INFO">Element 'xpath://*[@id="shopping_cart_container"]/a/span' did not exist.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.887997" elapsed="0.004351"/>
+</kw>
+<kw name="Go to cart" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.893348" level="INFO">Clicking element 'xpath://*[@id="shopping_cart_container"]/a'.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.893348" elapsed="0.033606"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.926954" level="INFO">Verifying element 'xpath://*[@id="header_container"]/div[2]/span' contains exact text 'Your Cart'.</msg>
+<arg>xpath://*[@id="header_container"]/div[2]/span</arg>
+<arg>Your Cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.926954" elapsed="0.012407"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.945555" level="INFO">Current page contains element 'id:checkout'.</msg>
+<arg>id:checkout</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.939361" elapsed="0.006194"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.951718" level="INFO">Current page contains element 'id:continue-shopping'.</msg>
+<arg>id:continue-shopping</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.945555" elapsed="0.006163"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.958799" level="INFO">Current page contains text 'QTY'.</msg>
+<arg>QTY</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.951718" elapsed="0.007081"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.965854" level="INFO">Current page contains text 'Description'.</msg>
+<arg>Description</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.958799" elapsed="0.007055"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:59.893348" elapsed="0.072506"/>
+</kw>
+<kw name="Verify cart is empty" owner="resources">
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.978587" level="INFO">Current page does not contain text 'Sauce Labs Backpack'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.966853" elapsed="0.011734"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.988384" level="INFO">Current page does not contain text 'carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.978587" elapsed="0.009797"/>
+</kw>
+<arg>${ITEMS}[0]</arg>
+<arg>${ITEM1_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:59.965854" elapsed="0.022530"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:11:59.998388" level="INFO">Current page does not contain text 'Sauce Labs Bike Light'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.988384" elapsed="0.010004"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:00.010962" level="INFO">Current page does not contain text 'A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:11:59.999388" elapsed="0.011574"/>
+</kw>
+<arg>${ITEMS}[1]</arg>
+<arg>${ITEM2_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:11:59.988384" elapsed="0.022578"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:00.020967" level="INFO">Current page does not contain text 'Sauce Labs Bolt T-Shirt'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:00.010962" elapsed="0.010005"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:00.029967" level="INFO">Current page does not contain text 'Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:00.020967" elapsed="0.009000"/>
+</kw>
+<arg>${ITEMS}[2]</arg>
+<arg>${ITEM3_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:12:00.010962" elapsed="0.019005"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:00.039681" level="INFO">Current page does not contain text 'Sauce Labs Fleece Jacket'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:00.030967" elapsed="0.008714"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:00.049255" level="INFO">Current page does not contain text 'It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:00.040681" elapsed="0.008574"/>
+</kw>
+<arg>${ITEMS}[3]</arg>
+<arg>${ITEM4_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:12:00.029967" elapsed="0.019288"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:00.059329" level="INFO">Current page does not contain text 'Sauce Labs Onesie'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:00.050310" elapsed="0.009019"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:00.068334" level="INFO">Current page does not contain text 'Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:00.059329" elapsed="0.009005"/>
+</kw>
+<arg>${ITEMS}[4]</arg>
+<arg>${ITEM5_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:12:00.049255" elapsed="0.019079"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:00.078388" level="INFO">Current page does not contain text 'Test.allTheThings() T-Shirt (Red)'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:00.069329" elapsed="0.009059"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:00.087896" level="INFO">Current page does not contain text 'This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:00.078388" elapsed="0.009508"/>
+</kw>
+<arg>${ITEMS}[5]</arg>
+<arg>${ITEM6_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:12:00.068334" elapsed="0.019562"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:00.091346" level="INFO">Element 'xpath://*[@id="shopping_cart_container"]/a/span' did not exist.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:00.087896" elapsed="0.003450"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:59.965854" elapsed="0.125492"/>
+</kw>
+<kw name="Continue Shopping" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:00.091346" level="INFO">Clicking button 'id:continue-shopping'.</msg>
+<arg>id:continue-shopping</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:00.091346" elapsed="0.036301"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-12T13:12:02.128381" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-12T13:12:00.127647" elapsed="2.000734"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.128381" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.128381" elapsed="0.008982"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:00.091346" elapsed="2.046017"/>
+</kw>
+<kw name="Verify all Add button" owner="resources">
+<kw name="Verify Add button of Sauce Labs Backpack" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.142504" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.138523" elapsed="0.003981"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.142504" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-backpack' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.142504" elapsed="0.007996"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:02.138523" elapsed="0.011977"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Bike Light" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.154778" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-bike-light'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.150500" elapsed="0.004278"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.154778" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-bike-light' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.154778" elapsed="0.009292"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:02.150500" elapsed="0.013570"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Bolt T-Shirt" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.168069" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-bolt-t-shirt'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.164070" elapsed="0.003999"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.168069" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-bolt-t-shirt' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.168069" elapsed="0.008524"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:02.164070" elapsed="0.013581"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Fleece Jacket" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.181702" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.177651" elapsed="0.004552"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.182203" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-fleece-jacket' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.182203" elapsed="0.009527"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:02.177651" elapsed="0.014079"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Onesie" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.196719" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-onesie'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.192729" elapsed="0.003990"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.197269" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-onesie' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.196719" elapsed="0.012091"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:02.192729" elapsed="0.016081"/>
+</kw>
+<kw name="Verify Add button of Test.allTheThings() T-Shirt (Red)" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.216310" level="INFO">Current page contains element 'id:add-to-cart-test.allthethings()-t-shirt-(red)'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.209808" elapsed="0.006587"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.216896" level="INFO">Verifying element 'id:add-to-cart-test.allthethings()-t-shirt-(red)' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.216896" elapsed="0.019706"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:02.209309" elapsed="0.027293"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:02.138523" elapsed="0.098079"/>
+</kw>
+<kw name="Logout the page" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.237603" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.237603" elapsed="0.043165"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=logout_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.280768" elapsed="0.224727"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:02.506495" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
+<arg>id=logout_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.505495" elapsed="0.023586"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.529081" elapsed="0.007000"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:02.237603" elapsed="0.298478"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-12T13:12:02.537081" elapsed="2.105246"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:11:51.479069" elapsed="13.164206"/>
+</test>
+<test id="s1-t5" name="Reset App State with error user" line="80">
+<kw name="Open Browser to Login" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:04.644318" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-12T13:12:04.644318" elapsed="4.748407"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:09.400620" level="INFO">Current page contains element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:09.392725" elapsed="0.007895"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:04.644318" elapsed="4.756302"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-12T13:12:09.400620" elapsed="0.023699"/>
+</kw>
+<kw name="Login with error user" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:09.425324" level="INFO">Typing text 'error_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${ERROR_USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:09.425324" elapsed="0.073801"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:09.499125" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:09.499125" elapsed="0.053130"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:09.553256" level="INFO">Clicking button 'css=.btn_action'.</msg>
+<arg>css=.btn_action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:09.553256" elapsed="0.057718"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-12T13:12:11.612427" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-12T13:12:09.611975" elapsed="2.000452"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.612427" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.612427" elapsed="0.014697"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:09.424319" elapsed="2.202805"/>
+</kw>
+<kw name="Buy All Items (problem user)" owner="resources">
+<kw name="Buy Sauce Labs Backpack" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.628125" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.628125" elapsed="0.029165"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-backpack</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.657290" elapsed="0.013863"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.675779" level="INFO">Element 'id:add-to-cart-sauce-labs-backpack' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.671153" elapsed="0.004626"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.675779" level="INFO">Verifying element 'id:remove-sauce-labs-backpack' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-backpack</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.675779" elapsed="0.008000"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:11.628125" elapsed="0.055654"/>
+</kw>
+<kw name="Buy Sauce Labs Bike Light" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.684779" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-bike-light'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.684779" elapsed="0.027892"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-bike-light</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.712671" elapsed="0.013053"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.728724" level="INFO">Element 'id:add-to-cart-sauce-labs-bike-light' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.725724" elapsed="0.003000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.729725" level="INFO">Verifying element 'id:remove-sauce-labs-bike-light' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-bike-light</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.729725" elapsed="0.007999"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:11.684779" elapsed="0.052945"/>
+</kw>
+<kw name="Buy Sauce Labs Bolt T-Shirt (problem user)" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.738728" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-bolt-t-shirt'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.737724" elapsed="0.029714"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.775437" level="INFO">Element 'id:add-to-cart-sauce-labs-bolt-t-shirt' is displayed.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.767438" elapsed="0.007999"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.780437" level="INFO">Element 'id:remove-sauce-labs-bolt-t-shirt' did not exist.</msg>
+<arg>id:remove-sauce-labs-bolt-t-shirt</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.775437" elapsed="0.006003"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:11.737724" elapsed="0.043716"/>
+</kw>
+<kw name="Buy Sauce Labs Fleece Jacket (problem user)" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.781440" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.781440" elapsed="0.028088"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.817523" level="INFO">Element 'id:add-to-cart-sauce-labs-fleece-jacket' is displayed.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.809528" elapsed="0.007995"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.822523" level="INFO">Element 'id:remove-sauce-labs-fleece-jacket' did not exist.</msg>
+<arg>id:remove-sauce-labs-fleece-jacket</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.817523" elapsed="0.005000"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:11.781440" elapsed="0.042083"/>
+</kw>
+<kw name="Buy Sauce Labs Onesie" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.823523" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-onesie'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.823523" elapsed="0.027963"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:remove-sauce-labs-onesie</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.851486" elapsed="0.010646"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.865131" level="INFO">Element 'id:add-to-cart-sauce-labs-onesie' did not exist.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.862132" elapsed="0.002999"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.866131" level="INFO">Verifying element 'id:remove-sauce-labs-onesie' contains exact text 'Remove'.</msg>
+<arg>id:remove-sauce-labs-onesie</arg>
+<arg>Remove</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.865131" elapsed="0.007172"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:11.823523" elapsed="0.048780"/>
+</kw>
+<kw name="Buy Test.allTheThings() T-Shirt (Red) (problem user)" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.873304" level="INFO">Clicking button 'id:add-to-cart-test.allthethings()-t-shirt-(red)'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.873304" elapsed="0.027790"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.909094" level="INFO">Element 'id:add-to-cart-test.allthethings()-t-shirt-(red)' is displayed.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.901094" elapsed="0.008000"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.914093" level="INFO">Element 'id:remove-test.allthethings()-t-shirt-(red)' did not exist.</msg>
+<arg>id:remove-test.allthethings()-t-shirt-(red)</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.909094" elapsed="0.004999"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:11.872303" elapsed="0.042786"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:11.628125" elapsed="0.286964"/>
+</kw>
+<kw name="Cart Item Quantity" owner="resources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.915089" level="INFO">Verifying element 'xpath://*[@id="shopping_cart_container"]/a/span' contains exact text '3'.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<arg>${quantity}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.915089" elapsed="0.009767"/>
+</kw>
+<arg>3</arg>
+<status status="PASS" start="2024-05-12T13:12:11.915089" elapsed="0.009767"/>
+</kw>
+<kw name="Reset App State" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:11.924856" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.924856" elapsed="0.028775"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=reset_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:11.954631" elapsed="0.223293"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.178928" level="INFO">Clicking element 'id=reset_sidebar_link'.</msg>
+<arg>id=reset_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.177924" elapsed="0.019810"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:11.924856" elapsed="0.273882"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.204437" level="INFO">Element 'xpath://*[@id="shopping_cart_container"]/a/span' did not exist.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.198738" elapsed="0.005699"/>
+</kw>
+<kw name="Go to cart" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.205547" level="INFO">Clicking element 'xpath://*[@id="shopping_cart_container"]/a'.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.205547" elapsed="0.030706"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.237253" level="INFO">Verifying element 'xpath://*[@id="header_container"]/div[2]/span' contains exact text 'Your Cart'.</msg>
+<arg>xpath://*[@id="header_container"]/div[2]/span</arg>
+<arg>Your Cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.236253" elapsed="0.011998"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.254252" level="INFO">Current page contains element 'id:checkout'.</msg>
+<arg>id:checkout</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.249252" elapsed="0.005000"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.260248" level="INFO">Current page contains element 'id:continue-shopping'.</msg>
+<arg>id:continue-shopping</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.254252" elapsed="0.005996"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.266249" level="INFO">Current page contains text 'QTY'.</msg>
+<arg>QTY</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.260248" elapsed="0.006001"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.272363" level="INFO">Current page contains text 'Description'.</msg>
+<arg>Description</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.266249" elapsed="0.006114"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:12.205547" elapsed="0.066816"/>
+</kw>
+<kw name="Verify cart is empty" owner="resources">
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.284363" level="INFO">Current page does not contain text 'Sauce Labs Backpack'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.273363" elapsed="0.011000"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.293367" level="INFO">Current page does not contain text 'carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.284363" elapsed="0.009004"/>
+</kw>
+<arg>${ITEMS}[0]</arg>
+<arg>${ITEM1_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:12:12.273363" elapsed="0.020004"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.303955" level="INFO">Current page does not contain text 'Sauce Labs Bike Light'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.294368" elapsed="0.009645"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.313006" level="INFO">Current page does not contain text 'A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.304103" elapsed="0.009414"/>
+</kw>
+<arg>${ITEMS}[1]</arg>
+<arg>${ITEM2_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:12:12.293367" elapsed="0.020150"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.323278" level="INFO">Current page does not contain text 'Sauce Labs Bolt T-Shirt'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.313645" elapsed="0.009690"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.332546" level="INFO">Current page does not contain text 'Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.323449" elapsed="0.009160"/>
+</kw>
+<arg>${ITEMS}[2]</arg>
+<arg>${ITEM3_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:12:12.313645" elapsed="0.019027"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.342260" level="INFO">Current page does not contain text 'Sauce Labs Fleece Jacket'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.332873" elapsed="0.009412"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.351354" level="INFO">Current page does not contain text 'It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.342285" elapsed="0.009069"/>
+</kw>
+<arg>${ITEMS}[3]</arg>
+<arg>${ITEM4_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:12:12.332816" elapsed="0.018538"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.361381" level="INFO">Current page does not contain text 'Sauce Labs Onesie'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.352030" elapsed="0.009408"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.370739" level="INFO">Current page does not contain text 'Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.361568" elapsed="0.009326"/>
+</kw>
+<arg>${ITEMS}[4]</arg>
+<arg>${ITEM5_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:12:12.351816" elapsed="0.019169"/>
+</kw>
+<kw name="Verify Item not existing in cart" owner="resources">
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.380727" level="INFO">Current page does not contain text 'Test.allTheThings() T-Shirt (Red)'.</msg>
+<arg>${item_name}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.371035" elapsed="0.009692"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.389661" level="INFO">Current page does not contain text 'This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.'.</msg>
+<arg>${item_desc}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.380727" elapsed="0.008934"/>
+</kw>
+<arg>${ITEMS}[5]</arg>
+<arg>${ITEM6_DESC}</arg>
+<status status="PASS" start="2024-05-12T13:12:12.371035" elapsed="0.018626"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.393452" level="INFO">Element 'xpath://*[@id="shopping_cart_container"]/a/span' did not exist.</msg>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.390162" elapsed="0.003350"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:12.273363" elapsed="0.120208"/>
+</kw>
+<kw name="Continue Shopping" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:12.394329" level="INFO">Clicking button 'id:continue-shopping'.</msg>
+<arg>id:continue-shopping</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.394221" elapsed="0.054381"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-12T13:12:14.449209" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-12T13:12:12.448846" elapsed="2.000363"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.449209" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.449209" elapsed="0.010537"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:12.393946" elapsed="2.065800"/>
+</kw>
+<kw name="Verify all Add button" owner="resources">
+<kw name="Verify Add button of Sauce Labs Backpack" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.463729" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.460734" elapsed="0.002995"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.463729" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-backpack' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.463729" elapsed="0.006756"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:14.459746" elapsed="0.010739"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Bike Light" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.473545" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-bike-light'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.470485" elapsed="0.003060"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.473545" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-bike-light' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-bike-light</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.473545" elapsed="0.007186"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:14.470485" elapsed="0.010246"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Bolt T-Shirt" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.483736" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-bolt-t-shirt'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.480731" elapsed="0.004004"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.484735" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-bolt-t-shirt' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.484735" elapsed="0.005996"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:14.480731" elapsed="0.010000"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Fleece Jacket" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.494735" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.491737" elapsed="0.002998"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.494735" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-fleece-jacket' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.494735" elapsed="0.007001"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:14.490731" elapsed="0.011005"/>
+</kw>
+<kw name="Verify Add button of Sauce Labs Onesie" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.504735" level="INFO">Current page contains element 'id:add-to-cart-sauce-labs-onesie'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.501736" elapsed="0.003999"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.505735" level="INFO">Verifying element 'id:add-to-cart-sauce-labs-onesie' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-sauce-labs-onesie</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.505735" elapsed="0.007221"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:14.501736" elapsed="0.011220"/>
+</kw>
+<kw name="Verify Add button of Test.allTheThings() T-Shirt (Red)" owner="resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.515958" level="INFO">Current page contains element 'id:add-to-cart-test.allthethings()-t-shirt-(red)'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.512956" elapsed="0.003002"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.515958" level="INFO">Verifying element 'id:add-to-cart-test.allthethings()-t-shirt-(red)' contains exact text 'Add to cart'.</msg>
+<arg>id:add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<arg>Add to cart</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.515958" elapsed="0.006998"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:14.512956" elapsed="0.010000"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:14.459746" elapsed="0.063210"/>
+</kw>
+<kw name="Logout the page" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.523956" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.523956" elapsed="0.023555"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=logout_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.548511" elapsed="0.221402"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-12T13:12:14.769913" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
+<arg>id=logout_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.769913" elapsed="0.022995"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.792908" elapsed="0.005000"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:14.523956" elapsed="0.273952"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-12T13:12:14.798912" elapsed="2.097456"/>
+</kw>
+<status status="PASS" start="2024-05-12T13:12:04.644318" elapsed="12.252960"/>
+</test>
+<status status="PASS" start="2024-05-12T13:11:00.249679" elapsed="76.648599"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Reset App State Test">Reset App State Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

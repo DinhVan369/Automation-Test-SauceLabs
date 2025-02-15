@@ -1,0 +1,3012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.0 on win32)" generated="2024-05-14T20:40:43.056167" rpa="false" schemaversion="5">
+<suite id="s1" name="View Detail Item Test" source="C:\TailieuhctapPM\Kiem thu\Thuc hanh\GK\gk\View Detail Item test\view_detail_item_test.robot">
+<test id="s1-t1" name="Verify View all Items for standard user" line="5">
+<kw name="Open Browser to Login" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:43.242181" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-14T20:40:43.242181" elapsed="5.202153"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:48.452601" level="INFO">Current page contains element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:40:48.444334" elapsed="0.008267"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:40:43.241684" elapsed="5.210917"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-14T20:40:48.452601" elapsed="0.023791"/>
+</kw>
+<kw name="Login with standard user" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:48.477948" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${STANDARD_USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:48.477449" elapsed="0.075961"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:48.553410" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:48.553410" elapsed="0.053624"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:48.607034" level="INFO">Clicking button 'css=.btn_action'.</msg>
+<arg>css=.btn_action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:48.607034" elapsed="0.065335"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:40:50.672964" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:40:48.672369" elapsed="2.000595"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:50.672964" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:50.672964" elapsed="0.014475"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:40:48.476392" elapsed="2.211047"/>
+</kw>
+<kw name="Get Cart Icon Position" owner="resources">
+<kw name="Get Horizontal Position" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:50.698412" level="INFO">${cart_icon} = 1971</msg>
+<var>${cart_icon}</var>
+<arg>xpath://*[@id="shopping_cart_container"]</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:50.687439" elapsed="0.010973"/>
+</kw>
+<return>
+<value>${cart_icon}</value>
+<status status="PASS" start="2024-05-14T20:40:50.698412" elapsed="0.000000"/>
+</return>
+<msg time="2024-05-14T20:40:50.698412" level="INFO">${cart_icon} = 1971</msg>
+<var>${cart_icon}</var>
+<status status="PASS" start="2024-05-14T20:40:50.687439" elapsed="0.010973"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${cart_icon}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-14T20:40:50.698412" elapsed="0.000000"/>
+</kw>
+<kw name="View all Items" owner="resources">
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:50.699409" level="INFO">Clicking element 'xpath://*[@id="item_4_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:50.699409" elapsed="0.029979"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:40:52.729690" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:40:50.729388" elapsed="2.000302"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:52.729690" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Backpack'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:52.729690" elapsed="0.012024"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:52.741714" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:52.741714" elapsed="0.010625"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:52.752339" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$29.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:52.752339" elapsed="0.008970"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:52.766296" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:40:52.761309" elapsed="0.004987"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:52.774920" level="INFO">${image_src} = https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:52.766296" elapsed="0.008624"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:40:52.774920" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_4_title_link"]/div</arg>
+<arg>${ITEMS}[0]</arg>
+<arg>${ITEM1_DESC}</arg>
+<arg>${ITEMS_PRICE}[0]</arg>
+<arg>${ITEM1_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:40:50.699409" elapsed="2.075511"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:52.776211" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:52.774920" elapsed="0.036201"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:52.811121" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:52.811121" elapsed="0.009990"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:40:52.774920" elapsed="0.046191"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:52.821111" level="INFO">Clicking element 'xpath://*[@id="item_0_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:52.821111" elapsed="0.028137"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:40:54.849590" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:40:52.849248" elapsed="2.000342"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:54.849812" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Bike Light'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:54.849812" elapsed="0.008329"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:54.859138" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:54.858141" elapsed="0.007974"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:54.867107" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$9.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:54.866115" elapsed="0.006976"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:54.876447" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:40:54.874084" elapsed="0.002363"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:54.883587" level="INFO">${image_src} = https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b0.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:54.876447" elapsed="0.007140"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:40:54.883587" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_0_title_link"]/div</arg>
+<arg>${ITEMS}[1]</arg>
+<arg>${ITEM2_DESC}</arg>
+<arg>${ITEMS_PRICE}[1]</arg>
+<arg>${ITEM2_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:40:52.821111" elapsed="2.062476"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:54.884585" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:54.884585" elapsed="0.032441"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:54.918027" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:54.917026" elapsed="0.010963"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:40:54.884585" elapsed="0.043404"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:54.928989" level="INFO">Clicking element 'xpath://*[@id="item_1_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:54.927989" elapsed="0.027387"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:40:56.955488" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:40:54.955376" elapsed="2.000112"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:56.955488" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Bolt T-Shirt'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:56.955488" elapsed="0.009769"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:56.965257" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:56.965257" elapsed="0.006982"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:56.972239" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$15.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:56.972239" elapsed="0.006986"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:56.982210" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:40:56.979225" elapsed="0.002985"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:56.988200" level="INFO">${image_src} = https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:56.982210" elapsed="0.005990"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:40:56.988200" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_1_title_link"]/div</arg>
+<arg>${ITEMS}[2]</arg>
+<arg>${ITEM3_DESC}</arg>
+<arg>${ITEMS_PRICE}[2]</arg>
+<arg>${ITEM3_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:40:54.927989" elapsed="2.060211"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:56.989196" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:56.989196" elapsed="0.030948"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:57.020144" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:57.020144" elapsed="0.008974"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:40:56.988200" elapsed="0.040918"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:57.030111" level="INFO">Clicking element 'xpath://*[@id="item_5_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:57.030111" elapsed="0.026351"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:40:59.057451" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:40:57.056462" elapsed="2.000989"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:59.057451" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Fleece Jacket'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:59.057451" elapsed="0.011597"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:59.069048" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:59.069048" elapsed="0.007045"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:59.076093" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$49.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:59.076093" elapsed="0.006976"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:59.086337" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:40:59.083069" elapsed="0.003268"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:59.092593" level="INFO">${image_src} = https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.51d7ffaf.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:59.086563" elapsed="0.006030"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:40:59.092593" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_5_title_link"]/div</arg>
+<arg>${ITEMS}[3]</arg>
+<arg>${ITEM4_DESC}</arg>
+<arg>${ITEMS_PRICE}[3]</arg>
+<arg>${ITEM4_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:40:57.030111" elapsed="2.062482"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:59.092593" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:59.092593" elapsed="0.030405"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:59.123990" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:40:59.123493" elapsed="0.011258"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:40:59.092593" elapsed="0.042158"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:40:59.135782" level="INFO">Clicking element 'xpath://*[@id="item_2_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:40:59.134751" elapsed="0.027696"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:41:01.163117" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:40:59.162945" elapsed="2.000172"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:01.163117" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Onesie'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:01.163117" elapsed="0.010395"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:01.173512" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:01.173512" elapsed="0.006965"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:01.180477" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$7.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:01.180477" elapsed="0.006645"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:01.190262" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:41:01.187122" elapsed="0.003140"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:01.195733" level="INFO">${image_src} = https://www.saucedemo.com/static/media/red-onesie-1200x1500.2ec615b2.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:01.190262" elapsed="0.005471"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:41:01.195733" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_2_title_link"]/div</arg>
+<arg>${ITEMS}[4]</arg>
+<arg>${ITEM5_DESC}</arg>
+<arg>${ITEMS_PRICE}[4]</arg>
+<arg>${ITEM5_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:40:59.134751" elapsed="2.060982"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:01.195733" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:01.195733" elapsed="0.029628"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:01.225858" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:01.225858" elapsed="0.009199"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:01.195733" elapsed="0.039324"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:01.236083" level="INFO">Clicking element 'xpath://*[@id="item_3_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:01.235057" elapsed="0.028008"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:41:03.264043" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:41:01.263634" elapsed="2.000409"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:03.264043" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Test.allTheThings() T-Shirt (Red)'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:03.264043" elapsed="0.010063"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:03.274106" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:03.274106" elapsed="0.006917"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:03.281023" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$15.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:03.281023" elapsed="0.006582"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:03.290773" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:41:03.287605" elapsed="0.003168"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:03.296468" level="INFO">${image_src} = https://www.saucedemo.com/static/media/red-tatt-1200x1500.30dadef4.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:03.290773" elapsed="0.005695"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:41:03.296468" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_3_title_link"]/div</arg>
+<arg>${ITEMS}[5]</arg>
+<arg>${ITEM6_DESC}</arg>
+<arg>${ITEMS_PRICE}[5]</arg>
+<arg>${ITEM6_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:41:01.235057" elapsed="2.061411"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:03.296468" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:03.296468" elapsed="0.030695"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:03.327163" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:03.327163" elapsed="0.009875"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:03.296468" elapsed="0.040570"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:40:50.699409" elapsed="12.638130"/>
+</kw>
+<kw name="Logout the page" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:03.337539" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:03.337539" elapsed="0.030639"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=logout_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-14T20:41:03.368178" elapsed="0.221967"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:03.590642" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
+<arg>id=logout_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:03.590642" elapsed="0.023602"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:41:03.614779" elapsed="0.004420"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:03.337539" elapsed="0.281660"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-14T20:41:03.619929" elapsed="2.107067"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:40:43.240687" elapsed="22.487206"/>
+</test>
+<test id="s1-t2" name="Verify View all Items for problem user" line="19">
+<kw name="Open Browser to Login" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:05.729053" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-14T20:41:05.729053" elapsed="6.093773"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:11.830841" level="INFO">Current page contains element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:41:11.822826" elapsed="0.008015"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:05.729053" elapsed="6.101788"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-14T20:41:11.830841" elapsed="0.016269"/>
+</kw>
+<kw name="Login with problem user" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:11.848156" level="INFO">Typing text 'problem_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${PROBLEM_USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:11.847110" elapsed="0.072746"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:11.920852" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:11.920852" elapsed="0.051691"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:11.973538" level="INFO">Clicking button 'css=.btn_action'.</msg>
+<arg>css=.btn_action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:11.973538" elapsed="0.059740"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:41:14.034149" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:41:12.033480" elapsed="2.000669"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:14.034651" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:14.034149" elapsed="0.015672"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:11.847110" elapsed="2.202711"/>
+</kw>
+<kw name="View all Items (problem user)" owner="resources">
+<kw name="View item (problem user)" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:14.050818" level="INFO">Clicking element 'xpath://*[@id="item_4_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:14.050818" elapsed="0.028589"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:41:16.080167" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:41:14.079905" elapsed="2.000262"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:16.080167" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' does not contain exact text 'Sauce Labs Backpack'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:16.080167" elapsed="0.013845"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:16.094012" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' does not contain exact text 'carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:16.094012" elapsed="0.009323"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:16.103335" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' does not contain exact text '$29.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:16.103335" elapsed="0.008494"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:16.117444" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:41:16.111829" elapsed="0.005615"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:16.126499" level="INFO">${image_src} = https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.51d7ffaf.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:16.117444" elapsed="0.009139"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-14T20:41:16.126707" elapsed="0.000111"/>
+</kw>
+<arg>xpath://*[@id="item_4_title_link"]/div</arg>
+<arg>${ITEMS}[0]</arg>
+<arg>${ITEM1_DESC}</arg>
+<arg>${ITEMS_PRICE}[0]</arg>
+<arg>${BROKEN_ITEM_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:41:14.050818" elapsed="2.076107"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:16.126925" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:16.126925" elapsed="0.035474"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:16.163395" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:16.163395" elapsed="0.009905"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:16.126925" elapsed="0.046375"/>
+</kw>
+<kw name="View item (problem user)" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:16.174331" level="INFO">Clicking element 'xpath://*[@id="item_0_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:16.173300" elapsed="0.029086"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:41:18.203150" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:41:16.202883" elapsed="2.000267"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:18.203150" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' does not contain exact text 'Sauce Labs Bike Light'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:18.203150" elapsed="0.011020"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:18.214170" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' does not contain exact text 'A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:18.214170" elapsed="0.007257"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:18.221427" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' does not contain exact text '$9.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:18.221427" elapsed="0.006973"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:18.232599" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:41:18.228400" elapsed="0.004199"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:18.238594" level="INFO">${image_src} = https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:18.232599" elapsed="0.005995"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-14T20:41:18.238594" elapsed="0.000996"/>
+</kw>
+<arg>xpath://*[@id="item_0_title_link"]/div</arg>
+<arg>${ITEMS}[1]</arg>
+<arg>${ITEM2_DESC}</arg>
+<arg>${ITEMS_PRICE}[1]</arg>
+<arg>${BROKEN_ITEM_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:41:16.173300" elapsed="2.066290"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:18.239590" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:18.239590" elapsed="0.031941"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:18.271531" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:18.271531" elapsed="0.011544"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:18.239590" elapsed="0.043485"/>
+</kw>
+<kw name="View item (problem user)" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:18.283075" level="INFO">Clicking element 'xpath://*[@id="item_1_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:18.283075" elapsed="0.026860"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:41:20.311096" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:41:18.310949" elapsed="2.000147"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:20.311096" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' does not contain exact text 'Sauce Labs Bolt T-Shirt'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:20.311096" elapsed="0.011264"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:20.322360" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' does not contain exact text 'Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:20.322360" elapsed="0.006490"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:20.329847" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' does not contain exact text '$15.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:20.329847" elapsed="0.005979"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:20.339809" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:41:20.336820" elapsed="0.002989"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:20.344793" level="INFO">${image_src} = https://www.saucedemo.com/static/media/red-onesie-1200x1500.2ec615b2.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:20.339809" elapsed="0.004984"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-14T20:41:20.344793" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_1_title_link"]/div</arg>
+<arg>${ITEMS}[2]</arg>
+<arg>${ITEM3_DESC}</arg>
+<arg>${ITEMS_PRICE}[2]</arg>
+<arg>${BROKEN_ITEM_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:41:18.283075" elapsed="2.061718"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:20.345793" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:20.345793" elapsed="0.030429"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:20.376222" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:20.376222" elapsed="0.009427"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:20.344793" elapsed="0.040856"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:20.386646" level="INFO">Clicking element 'xpath://*[@id="item_5_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:20.385649" elapsed="0.025691"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:41:22.412051" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:41:20.411837" elapsed="2.000214"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:22.412051" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'ITEM NOT FOUND'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:22.412051" elapsed="0.010777"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:22.422828" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'We're sorry, but your call could not be completed as dialled. Please check your number, and try your call again. If you are in need of assistance, please dial 0 to be connected with an operator. This is a recording. 4 T 1.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:22.422828" elapsed="0.007282"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:22.430110" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$√-1'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:22.430110" elapsed="0.007049"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:22.439659" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:41:22.437159" elapsed="0.002500"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:22.445639" level="INFO">${image_src} = https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:22.439659" elapsed="0.005980"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:41:22.445639" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_5_title_link"]/div</arg>
+<arg>ITEM NOT FOUND</arg>
+<arg>${BROKEN_ITEM_DESC}</arg>
+<arg>${BROKEN_ITEM_PRICE}</arg>
+<arg>${BROKEN_ITEM_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:41:20.385649" elapsed="2.059990"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:22.445639" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:22.445639" elapsed="0.033619"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:22.479258" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:22.479258" elapsed="0.010197"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:22.445639" elapsed="0.043816"/>
+</kw>
+<kw name="View item (problem user)" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:22.490448" level="INFO">Clicking element 'xpath://*[@id="item_2_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:22.489455" elapsed="0.025597"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:41:24.517055" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:41:22.515052" elapsed="2.002003"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:24.517055" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' does not contain exact text 'Sauce Labs Onesie'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:24.517055" elapsed="0.010425"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:24.527480" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' does not contain exact text 'Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:24.527480" elapsed="0.006590"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:24.534070" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' does not contain exact text '$7.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:24.534070" elapsed="0.006910"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:24.543974" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:41:24.540980" elapsed="0.002994"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:24.550024" level="INFO">${image_src} = https://www.saucedemo.com/static/media/red-tatt-1200x1500.30dadef4.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:24.543974" elapsed="0.006050"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-14T20:41:24.550024" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_2_title_link"]/div</arg>
+<arg>${ITEMS}[4]</arg>
+<arg>${ITEM5_DESC}</arg>
+<arg>${ITEMS_PRICE}[4]</arg>
+<arg>${BROKEN_ITEM_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:41:22.489455" elapsed="2.060569"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:24.550024" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:24.550024" elapsed="0.028397"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:24.579425" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:24.578421" elapsed="0.009764"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:24.550024" elapsed="0.038161"/>
+</kw>
+<kw name="View item (problem user)" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:24.589183" level="INFO">Clicking element 'xpath://*[@id="item_3_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:24.589183" elapsed="0.026578"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:41:26.617243" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:41:24.616260" elapsed="2.000983"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:26.617243" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' does not contain exact text 'Test.allTheThings() T-Shirt (Red)'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:26.617243" elapsed="0.010459"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:26.627702" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' does not contain exact text 'This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:26.627702" elapsed="0.006503"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:26.634205" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' does not contain exact text '$15.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:26.634205" elapsed="0.006663"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:26.643797" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:41:26.640868" elapsed="0.002929"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:26.650188" level="INFO">${image_src} = https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:26.643797" elapsed="0.006391"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-14T20:41:26.650188" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_3_title_link"]/div</arg>
+<arg>${ITEMS}[5]</arg>
+<arg>${ITEM6_DESC}</arg>
+<arg>${ITEMS_PRICE}[5]</arg>
+<arg>${BROKEN_ITEM_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:41:24.588185" elapsed="2.062003"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:26.650188" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:26.650188" elapsed="0.029770"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:26.679958" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:26.679958" elapsed="0.009181"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:26.650188" elapsed="0.038951"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:14.050818" elapsed="12.638321"/>
+</kw>
+<kw name="Logout the page" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:26.690515" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:26.690018" elapsed="0.029197"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=logout_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-14T20:41:26.719215" elapsed="0.222481"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:26.942697" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
+<arg>id=logout_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:26.941696" elapsed="0.025084"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:41:26.966780" elapsed="0.005321"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:26.690018" elapsed="0.282083"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-14T20:41:26.973097" elapsed="2.105214"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:05.728607" elapsed="23.350705"/>
+</test>
+<test id="s1-t3" name="Verify View all Items for performance glitch user" line="30">
+<kw name="Open Browser to Login" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:29.079964" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-14T20:41:29.079964" elapsed="5.332233"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:34.418617" level="INFO">Current page contains element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:41:34.412197" elapsed="0.007417"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:29.079964" elapsed="5.339650"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-14T20:41:34.419614" elapsed="0.026096"/>
+</kw>
+<kw name="Login with performance glitch user" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:34.446703" level="INFO">Typing text 'performance_glitch_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${PERFORMANCE_GLITCH_USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:34.446703" elapsed="0.076406"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:34.524108" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:34.523109" elapsed="0.051339"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:34.574448" level="INFO">Clicking button 'css=.btn_action'.</msg>
+<arg>css=.btn_action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:34.574448" elapsed="5.060844"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:41:44.636332" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:41:39.635292" elapsed="5.001040"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:44.636332" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:44.636332" elapsed="0.014973"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:34.446203" elapsed="10.205102"/>
+</kw>
+<kw name="View all Items (performance glitch user)" owner="resources">
+<kw name="View item (performance glitch user)" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:44.652350" level="INFO">Clicking element 'xpath://*[@id="item_4_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:44.652350" elapsed="0.030859"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:41:49.684651" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:41:44.683209" elapsed="5.001442"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:49.684651" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Backpack'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:49.684651" elapsed="0.011442"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:49.696590" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:49.696093" elapsed="0.010664"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:49.706757" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$29.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:49.706757" elapsed="0.008970"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:49.721035" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:41:49.715727" elapsed="0.005308"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:49.730003" level="INFO">${image_src} = https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:49.721035" elapsed="0.008968"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:41:49.730003" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_4_title_link"]/div</arg>
+<arg>${ITEMS}[0]</arg>
+<arg>${ITEM1_DESC}</arg>
+<arg>${ITEMS_PRICE}[0]</arg>
+<arg>${ITEM1_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:41:44.651853" elapsed="5.078150"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:49.730003" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:49.730003" elapsed="5.042509"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:54.773505" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:41:54.773505" elapsed="0.009782"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:49.730003" elapsed="5.053284"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:41:59.784080" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:41:54.783287" elapsed="5.000793"/>
+</kw>
+<kw name="View item (performance glitch user)" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:41:59.784080" level="INFO">Clicking element 'xpath://*[@id="item_0_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:41:59.784080" elapsed="0.031028"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:42:04.816487" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:41:59.816102" elapsed="5.000385"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:04.816487" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Bike Light'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:04.816487" elapsed="0.011257"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:04.827744" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:04.827744" elapsed="0.006909"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:04.835650" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$9.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:04.834653" elapsed="0.007297"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:04.845012" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:42:04.841950" elapsed="0.003062"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:04.851984" level="INFO">${image_src} = https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b0.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:42:04.845012" elapsed="0.006972"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:42:04.851984" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_0_title_link"]/div</arg>
+<arg>${ITEMS}[1]</arg>
+<arg>${ITEM2_DESC}</arg>
+<arg>${ITEMS_PRICE}[1]</arg>
+<arg>${ITEM2_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:41:59.784080" elapsed="5.067904"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:04.852565" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:42:04.852565" elapsed="5.036999"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:09.890060" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:09.890060" elapsed="0.010635"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:42:04.852565" elapsed="5.048130"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:42:14.901241" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:42:09.900695" elapsed="5.000546"/>
+</kw>
+<kw name="View item (performance glitch user)" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:14.901241" level="INFO">Clicking element 'xpath://*[@id="item_1_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:42:14.901241" elapsed="0.032107"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:42:19.933741" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:42:14.933348" elapsed="5.000393"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:19.933741" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Bolt T-Shirt'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:19.933741" elapsed="0.012061"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:19.945802" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:19.945802" elapsed="0.007706"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:19.953508" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$15.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:19.953508" elapsed="0.006725"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:19.963226" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:42:19.960233" elapsed="0.002993"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:19.969303" level="INFO">${image_src} = https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:42:19.963226" elapsed="0.006077"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:42:19.969303" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_1_title_link"]/div</arg>
+<arg>${ITEMS}[2]</arg>
+<arg>${ITEM3_DESC}</arg>
+<arg>${ITEMS_PRICE}[2]</arg>
+<arg>${ITEM3_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:42:14.901241" elapsed="5.068062"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:19.970300" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:42:19.970300" elapsed="5.036334"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:25.006898" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:25.006830" elapsed="0.009599"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:42:19.969303" elapsed="5.047126"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:42:30.018006" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:42:25.016932" elapsed="5.001074"/>
+</kw>
+<kw name="View item (performance glitch user)" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:30.018006" level="INFO">Clicking element 'xpath://*[@id="item_5_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:42:30.018006" elapsed="0.031437"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:42:35.050040" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:42:30.049443" elapsed="5.000597"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:35.050040" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Fleece Jacket'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:35.050040" elapsed="0.008169"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:35.059206" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:35.058209" elapsed="0.008023"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:35.066232" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$49.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:35.066232" elapsed="0.006976"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:35.076198" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:42:35.073208" elapsed="0.002990"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:35.082308" level="INFO">${image_src} = https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.51d7ffaf.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:42:35.076198" elapsed="0.006110"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:42:35.082308" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_5_title_link"]/div</arg>
+<arg>${ITEMS}[3]</arg>
+<arg>${ITEM4_DESC}</arg>
+<arg>${ITEMS_PRICE}[3]</arg>
+<arg>${ITEM4_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:42:30.018006" elapsed="5.064302"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:35.082308" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:42:35.082308" elapsed="5.036496"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:40.119301" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:40.119301" elapsed="0.011066"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:42:35.082308" elapsed="5.048059"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:42:45.130523" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:42:40.130367" elapsed="5.000156"/>
+</kw>
+<kw name="View item (performance glitch user)" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:45.130523" level="INFO">Clicking element 'xpath://*[@id="item_2_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:42:45.130523" elapsed="0.030977"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:42:50.163501" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:42:45.162496" elapsed="5.001005"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:50.163501" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Onesie'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:50.163501" elapsed="0.012225"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:50.175726" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:50.175726" elapsed="0.006122"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:50.182845" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$7.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:50.182845" elapsed="0.006590"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:50.192429" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:42:50.189435" elapsed="0.002994"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:50.198409" level="INFO">${image_src} = https://www.saucedemo.com/static/media/red-onesie-1200x1500.2ec615b2.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:42:50.192429" elapsed="0.005980"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:42:50.198409" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_2_title_link"]/div</arg>
+<arg>${ITEMS}[4]</arg>
+<arg>${ITEM5_DESC}</arg>
+<arg>${ITEMS_PRICE}[4]</arg>
+<arg>${ITEM5_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:42:45.130523" elapsed="5.067886"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:50.199406" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:42:50.199406" elapsed="5.035291"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:42:55.235280" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:42:55.235280" elapsed="0.009647"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:42:50.199406" elapsed="5.045521"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:00.245977" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:42:55.244927" elapsed="5.001050"/>
+</kw>
+<kw name="View item (performance glitch user)" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:00.245977" level="INFO">Clicking element 'xpath://*[@id="item_3_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:00.245977" elapsed="0.033556"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:05.279675" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:00.279533" elapsed="5.000142"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:05.279675" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Test.allTheThings() T-Shirt (Red)'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:05.279675" elapsed="0.012477"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:05.292152" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:05.292152" elapsed="0.007064"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:05.299216" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$15.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:05.299216" elapsed="0.007159"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:05.309372" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:05.306375" elapsed="0.002997"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:05.315349" level="INFO">${image_src} = https://www.saucedemo.com/static/media/red-tatt-1200x1500.30dadef4.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:05.309372" elapsed="0.005977"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:43:05.315349" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_3_title_link"]/div</arg>
+<arg>${ITEMS}[5]</arg>
+<arg>${ITEM6_DESC}</arg>
+<arg>${ITEMS_PRICE}[5]</arg>
+<arg>${ITEM6_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:43:00.245977" elapsed="5.069372"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:05.316349" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:05.315349" elapsed="5.036604"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:10.351953" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:10.351953" elapsed="0.009846"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:05.315349" elapsed="5.047446"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:15.362924" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:10.362795" elapsed="5.000129"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:44.651853" elapsed="90.711071"/>
+</kw>
+<kw name="Logout the page" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:15.363926" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:15.363926" elapsed="0.032895"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=logout_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-14T20:43:15.396821" elapsed="0.224562"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:15.621880" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
+<arg>id=logout_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:15.621880" elapsed="0.022466"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:15.644846" elapsed="0.004174"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:15.362924" elapsed="0.286096"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-14T20:43:15.649522" elapsed="2.123705"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:41:29.079964" elapsed="108.694180"/>
+</test>
+<test id="s1-t4" name="Verify View all Items for error user" line="41">
+<kw name="Open Browser to Login" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:17.774741" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-14T20:43:17.774741" elapsed="6.283532"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:24.065447" level="INFO">Current page contains element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:24.058770" elapsed="0.006677"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:17.774741" elapsed="6.290706"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-14T20:43:24.066444" elapsed="0.024063"/>
+</kw>
+<kw name="Login with error user" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:24.092532" level="INFO">Typing text 'error_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${ERROR_USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:24.091536" elapsed="0.076292"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:24.168863" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:24.167828" elapsed="0.053116"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:24.220944" level="INFO">Clicking button 'css=.btn_action'.</msg>
+<arg>css=.btn_action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:24.220944" elapsed="0.058638"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:26.280626" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:24.279582" elapsed="2.001044"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:26.280626" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:26.280626" elapsed="0.014168"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:24.091536" elapsed="2.203258"/>
+</kw>
+<kw name="View all Items (error user)" owner="resources">
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:26.295791" level="INFO">Clicking element 'xpath://*[@id="item_4_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:26.295791" elapsed="0.031458"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:28.327537" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:26.327249" elapsed="2.000288"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:28.327537" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Backpack'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:28.327537" elapsed="0.013687"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:28.341224" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'A description should be here, but it failed to render! This error has been reported to Backtrace.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:28.341224" elapsed="0.009074"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:28.350298" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$29.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:28.350298" elapsed="0.009208"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:28.364608" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:28.359506" elapsed="0.005102"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:28.373534" level="INFO">${image_src} = https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:28.364608" elapsed="0.008926"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:43:28.373534" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_4_title_link"]/div</arg>
+<arg>${ITEMS}[0]</arg>
+<arg>${ERROR_ITEM_DESC}</arg>
+<arg>${ITEMS_PRICE}[0]</arg>
+<arg>${ITEM1_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:43:26.295791" elapsed="2.077743"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:28.373534" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:28.373534" elapsed="0.036628"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:28.411154" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:28.410162" elapsed="0.011094"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:28.373534" elapsed="0.048223"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:28.422767" level="INFO">Clicking element 'xpath://*[@id="item_0_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:28.421757" elapsed="0.029358"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:30.451980" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:28.451115" elapsed="2.000865"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:30.451980" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Bike Light'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:30.451980" elapsed="0.009967"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:30.461947" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'A description should be here, but it failed to render! This error has been reported to Backtrace.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:30.461947" elapsed="0.008765"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:30.470712" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$9.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:30.470712" elapsed="0.006978"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:30.480190" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:30.477690" elapsed="0.002500"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:30.487424" level="INFO">${image_src} = https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b0.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:30.481187" elapsed="0.006237"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:43:30.487424" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_0_title_link"]/div</arg>
+<arg>${ITEMS}[1]</arg>
+<arg>${ERROR_ITEM_DESC}</arg>
+<arg>${ITEMS_PRICE}[1]</arg>
+<arg>${ITEM2_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:43:28.421757" elapsed="2.065667"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:30.487982" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:30.487982" elapsed="0.031819"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:30.519801" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:30.519801" elapsed="0.010053"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:30.487982" elapsed="0.041872"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:30.530856" level="INFO">Clicking element 'xpath://*[@id="item_1_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:30.529854" elapsed="0.027675"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:32.558203" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:30.558026" elapsed="2.000177"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:32.558203" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Bolt T-Shirt'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:32.558203" elapsed="0.011825"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:32.570028" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'A description should be here, but it failed to render! This error has been reported to Backtrace.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:32.570028" elapsed="0.007196"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:32.577224" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$15.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:32.577224" elapsed="0.006588"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:32.587130" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:32.583812" elapsed="0.003318"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:32.592620" level="INFO">${image_src} = https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:32.587130" elapsed="0.005490"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:43:32.592620" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_1_title_link"]/div</arg>
+<arg>${ITEMS}[2]</arg>
+<arg>${ERROR_ITEM_DESC}</arg>
+<arg>${ITEMS_PRICE}[2]</arg>
+<arg>${ITEM3_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:43:30.529854" elapsed="2.062766"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:32.592620" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:32.592620" elapsed="0.030688"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:32.623809" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:32.623809" elapsed="0.008789"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:32.592620" elapsed="0.039978"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:32.633596" level="INFO">Clicking element 'xpath://*[@id="item_5_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:32.632598" elapsed="0.027124"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:34.659907" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:32.659722" elapsed="2.000185"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:34.659907" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Fleece Jacket'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:34.659907" elapsed="0.011403"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:34.671310" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'A description should be here, but it failed to render! This error has been reported to Backtrace.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:34.671310" elapsed="0.006979"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:34.678289" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$49.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:34.678289" elapsed="0.005984"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:34.687601" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:34.684273" elapsed="0.003328"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:34.693814" level="INFO">${image_src} = https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.51d7ffaf.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:34.687601" elapsed="0.006213"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:43:34.693814" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_5_title_link"]/div</arg>
+<arg>${ITEMS}[3]</arg>
+<arg>${ERROR_ITEM_DESC}</arg>
+<arg>${ITEMS_PRICE}[3]</arg>
+<arg>${ITEM4_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:43:32.632598" elapsed="2.061216"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:34.694316" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:34.694316" elapsed="0.028484"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:34.723797" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:34.722800" elapsed="0.010713"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:34.694316" elapsed="0.039197"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:34.733513" level="INFO">Clicking element 'xpath://*[@id="item_2_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:34.733513" elapsed="0.028770"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:36.763207" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:34.762283" elapsed="2.000924"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:36.763207" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Onesie'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:36.763207" elapsed="0.011396"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:36.774603" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'A description should be here, but it failed to render! This error has been reported to Backtrace.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:36.774603" elapsed="0.006850"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:36.781453" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$7.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:36.781453" elapsed="0.007030"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:36.791429" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:36.788483" elapsed="0.002946"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:36.797409" level="INFO">${image_src} = https://www.saucedemo.com/static/media/red-onesie-1200x1500.2ec615b2.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:36.791429" elapsed="0.005980"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:43:36.797409" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_2_title_link"]/div</arg>
+<arg>${ITEMS}[4]</arg>
+<arg>${ERROR_ITEM_DESC}</arg>
+<arg>${ITEMS_PRICE}[4]</arg>
+<arg>${ITEM5_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:43:34.733513" elapsed="2.063896"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:36.798407" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:36.797409" elapsed="0.030622"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:36.828532" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:36.828532" elapsed="0.009200"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:36.797409" elapsed="0.040323"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:36.838739" level="INFO">Clicking element 'xpath://*[@id="item_3_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:36.837732" elapsed="0.029345"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:38.867335" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:36.867077" elapsed="2.000258"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:38.867335" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Test.allTheThings() T-Shirt (Red)'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:38.867335" elapsed="0.011266"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:38.878601" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'A description should be here, but it failed to render! This error has been reported to Backtrace.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:38.878601" elapsed="0.006261"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:38.884862" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$15.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:38.884862" elapsed="0.007676"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:38.895226" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:38.892538" elapsed="0.002688"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:38.901202" level="INFO">${image_src} = https://www.saucedemo.com/static/media/red-tatt-1200x1500.30dadef4.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:38.895226" elapsed="0.005976"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:43:38.901202" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_3_title_link"]/div</arg>
+<arg>${ITEMS}[5]</arg>
+<arg>${ERROR_ITEM_DESC}</arg>
+<arg>${ITEMS_PRICE}[5]</arg>
+<arg>${ITEM6_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:43:36.837732" elapsed="2.063470"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:38.901202" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:38.901202" elapsed="0.030241"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:38.931443" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:38.931443" elapsed="0.008939"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:38.901202" elapsed="0.040176"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:26.295791" elapsed="12.645587"/>
+</kw>
+<kw name="Logout the page" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:38.941378" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:38.941378" elapsed="0.029346"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=logout_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-14T20:43:38.971721" elapsed="0.220470"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:39.193189" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
+<arg>id=logout_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:39.193189" elapsed="0.023557"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:39.216746" elapsed="0.005047"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:38.941378" elapsed="0.281409"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-14T20:43:39.222787" elapsed="2.098091"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:17.774741" elapsed="23.547140"/>
+</test>
+<test id="s1-t5" name="Verify View all Items for visual user" line="52">
+<kw name="Open Browser to Login" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:41.322923" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-14T20:43:41.322923" elapsed="6.247400"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:47.578466" level="INFO">Current page contains element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:47.570323" elapsed="0.008143"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:41.322923" elapsed="6.255543"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-14T20:43:47.578466" elapsed="0.020885"/>
+</kw>
+<kw name="Login with visual user" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:47.600350" level="INFO">Typing text 'visual_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${VISUAL_USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:47.600350" elapsed="0.071569"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:47.672920" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:47.672920" elapsed="0.051841"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:47.725756" level="INFO">Clicking button 'css=.btn_action'.</msg>
+<arg>css=.btn_action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:47.725756" elapsed="0.059275"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:49.785573" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:47.785031" elapsed="2.000542"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:49.785573" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:49.785573" elapsed="0.015721"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:47.599351" elapsed="2.201943"/>
+</kw>
+<kw name="Get Cart Icon Position" owner="resources">
+<kw name="Get Horizontal Position" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:49.812959" level="INFO">${cart_icon} = 1785</msg>
+<var>${cart_icon}</var>
+<arg>xpath://*[@id="shopping_cart_container"]</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:49.801294" elapsed="0.011665"/>
+</kw>
+<return>
+<value>${cart_icon}</value>
+<status status="PASS" start="2024-05-14T20:43:49.812959" elapsed="0.000000"/>
+</return>
+<msg time="2024-05-14T20:43:49.812959" level="INFO">${visual_cart_icon} = 1785</msg>
+<var>${visual_cart_icon}</var>
+<status status="PASS" start="2024-05-14T20:43:49.801294" elapsed="0.011665"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>int(${cart_icon})</arg>
+<arg>int(${visual_cart_icon})</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-14T20:43:49.812959" elapsed="0.000000"/>
+</kw>
+<kw name="View all Items (visual_user)" owner="resources">
+<kw name="View item (visual user)" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:49.813956" level="INFO">Clicking element 'xpath://*[@id="item_4_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:49.813956" elapsed="0.028011"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:51.843645" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:49.842959" elapsed="2.000686"/>
+</kw>
+<kw name="Verify Cart Icon position changed" owner="resources">
+<kw name="Get Cart Icon Position" owner="resources">
+<kw name="Get Horizontal Position" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:51.854213" level="INFO">${cart_icon} = 1802</msg>
+<var>${cart_icon}</var>
+<arg>xpath://*[@id="shopping_cart_container"]</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:51.843645" elapsed="0.010568"/>
+</kw>
+<return>
+<value>${cart_icon}</value>
+<status status="PASS" start="2024-05-14T20:43:51.854213" elapsed="0.000000"/>
+</return>
+<msg time="2024-05-14T20:43:51.854213" level="INFO">${visual_cart_icon} = 1802</msg>
+<var>${visual_cart_icon}</var>
+<status status="PASS" start="2024-05-14T20:43:51.843645" elapsed="0.010568"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>int(${cart_icon})</arg>
+<arg>int(${visual_cart_icon})</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-14T20:43:51.854213" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:51.843645" elapsed="0.010568"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:51.855277" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Backpack'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:51.854213" elapsed="0.011232"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:51.865445" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:51.865445" elapsed="0.008974"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:51.874419" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$29.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:51.874419" elapsed="0.008966"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:51.888368" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:51.883385" elapsed="0.004983"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:51.896345" level="INFO">${image_src} = https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:51.888368" elapsed="0.007977"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-14T20:43:51.896345" elapsed="0.000998"/>
+</kw>
+<arg>xpath://*[@id="item_4_title_link"]/div</arg>
+<arg>${ITEMS}[0]</arg>
+<arg>${ITEM1_DESC}</arg>
+<arg>${ITEMS_PRICE}[0]</arg>
+<arg>${BROKEN_ITEM_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:43:49.813956" elapsed="2.083387"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:51.897343" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:51.897343" elapsed="0.037868"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:51.935211" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:51.935211" elapsed="0.010672"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:51.897343" elapsed="0.049541"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:51.946884" level="INFO">Clicking element 'xpath://*[@id="item_0_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:51.946884" elapsed="0.027280"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:53.974191" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:51.974164" elapsed="2.000027"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:53.974191" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Bike Light'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:53.974191" elapsed="0.010819"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:53.985010" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:53.985010" elapsed="0.006982"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:53.992989" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$9.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:53.991992" elapsed="0.008288"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:54.003438" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:54.000280" elapsed="0.003158"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:54.010714" level="INFO">${image_src} = https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b0.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:54.004368" elapsed="0.006346"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:43:54.010714" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_0_title_link"]/div</arg>
+<arg>${ITEMS}[1]</arg>
+<arg>${ITEM2_DESC}</arg>
+<arg>${ITEMS_PRICE}[1]</arg>
+<arg>${ITEM2_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:43:51.946884" elapsed="2.063830"/>
+</kw>
+<kw name="Verify Cart Icon position changed" owner="resources">
+<kw name="Get Cart Icon Position" owner="resources">
+<kw name="Get Horizontal Position" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:54.018683" level="INFO">${cart_icon} = 1802</msg>
+<var>${cart_icon}</var>
+<arg>xpath://*[@id="shopping_cart_container"]</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:54.011711" elapsed="0.006972"/>
+</kw>
+<return>
+<value>${cart_icon}</value>
+<status status="PASS" start="2024-05-14T20:43:54.018683" elapsed="0.000000"/>
+</return>
+<msg time="2024-05-14T20:43:54.018683" level="INFO">${visual_cart_icon} = 1802</msg>
+<var>${visual_cart_icon}</var>
+<status status="PASS" start="2024-05-14T20:43:54.011711" elapsed="0.006972"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>int(${cart_icon})</arg>
+<arg>int(${visual_cart_icon})</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-14T20:43:54.018683" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:54.010714" elapsed="0.007969"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:54.019684" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:54.018683" elapsed="0.034216"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:54.052899" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:54.052899" elapsed="0.009846"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:54.018683" elapsed="0.045060"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:54.063743" level="INFO">Clicking element 'xpath://*[@id="item_1_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:54.063743" elapsed="0.027433"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:56.091674" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:54.091176" elapsed="2.000498"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:56.091674" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Bolt T-Shirt'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:56.091674" elapsed="0.009149"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:56.100823" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:56.100823" elapsed="0.008794"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:56.109617" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$15.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:56.109617" elapsed="0.007508"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:56.120979" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:56.117125" elapsed="0.003854"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:56.127267" level="INFO">${image_src} = https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:56.120979" elapsed="0.006288"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:43:56.127267" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_1_title_link"]/div</arg>
+<arg>${ITEMS}[2]</arg>
+<arg>${ITEM3_DESC}</arg>
+<arg>${ITEMS_PRICE}[2]</arg>
+<arg>${ITEM3_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:43:54.063743" elapsed="2.063524"/>
+</kw>
+<kw name="Verify Cart Icon position changed" owner="resources">
+<kw name="Get Cart Icon Position" owner="resources">
+<kw name="Get Horizontal Position" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:56.134293" level="INFO">${cart_icon} = 1802</msg>
+<var>${cart_icon}</var>
+<arg>xpath://*[@id="shopping_cart_container"]</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:56.127267" elapsed="0.007026"/>
+</kw>
+<return>
+<value>${cart_icon}</value>
+<status status="PASS" start="2024-05-14T20:43:56.134293" elapsed="0.000000"/>
+</return>
+<msg time="2024-05-14T20:43:56.134293" level="INFO">${visual_cart_icon} = 1802</msg>
+<var>${visual_cart_icon}</var>
+<status status="PASS" start="2024-05-14T20:43:56.127267" elapsed="0.007026"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>int(${cart_icon})</arg>
+<arg>int(${visual_cart_icon})</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-14T20:43:56.135291" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:56.127267" elapsed="0.008024"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:56.135291" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:56.135291" elapsed="0.029366"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:56.165657" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:56.164657" elapsed="0.010165"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:56.135291" elapsed="0.040529"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:56.176039" level="INFO">Clicking element 'xpath://*[@id="item_5_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:56.176039" elapsed="0.029500"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:43:58.206981" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:56.205539" elapsed="2.001442"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:58.206981" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Fleece Jacket'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:58.206981" elapsed="0.011033"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:58.218014" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:58.218014" elapsed="0.006716"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:58.224730" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$49.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:58.224730" elapsed="0.006982"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:58.234702" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:43:58.231712" elapsed="0.002990"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:58.239685" level="INFO">${image_src} = https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.51d7ffaf.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:58.234702" elapsed="0.004983"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:43:58.239685" elapsed="0.001001"/>
+</kw>
+<arg>xpath://*[@id="item_5_title_link"]/div</arg>
+<arg>${ITEMS}[3]</arg>
+<arg>${ITEM4_DESC}</arg>
+<arg>${ITEMS_PRICE}[3]</arg>
+<arg>${ITEM4_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:43:56.176039" elapsed="2.064647"/>
+</kw>
+<kw name="Verify Cart Icon position changed" owner="resources">
+<kw name="Get Cart Icon Position" owner="resources">
+<kw name="Get Horizontal Position" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:58.247141" level="INFO">${cart_icon} = 1802</msg>
+<var>${cart_icon}</var>
+<arg>xpath://*[@id="shopping_cart_container"]</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:58.240686" elapsed="0.006455"/>
+</kw>
+<return>
+<value>${cart_icon}</value>
+<status status="PASS" start="2024-05-14T20:43:58.247141" elapsed="0.000000"/>
+</return>
+<msg time="2024-05-14T20:43:58.247141" level="INFO">${visual_cart_icon} = 1802</msg>
+<var>${visual_cart_icon}</var>
+<status status="PASS" start="2024-05-14T20:43:58.240686" elapsed="0.006455"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>int(${cart_icon})</arg>
+<arg>int(${visual_cart_icon})</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-14T20:43:58.247141" elapsed="0.000501"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:58.240686" elapsed="0.006956"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:58.247642" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:58.247642" elapsed="0.028720"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:58.276859" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:43:58.276859" elapsed="0.008553"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:58.247642" elapsed="0.037770"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:43:58.286409" level="INFO">Clicking element 'xpath://*[@id="item_2_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:43:58.286409" elapsed="0.025529"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:44:00.312547" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:43:58.312440" elapsed="2.000107"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:00.312547" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Sauce Labs Onesie'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:44:00.312547" elapsed="0.010266"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:00.323806" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:44:00.323806" elapsed="0.006824"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:00.330630" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$7.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:44:00.330630" elapsed="0.006470"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:00.339603" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:44:00.337100" elapsed="0.002503"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:00.345101" level="INFO">${image_src} = https://www.saucedemo.com/static/media/red-onesie-1200x1500.2ec615b2.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:44:00.339603" elapsed="0.005498"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:44:00.345101" elapsed="0.001001"/>
+</kw>
+<arg>xpath://*[@id="item_2_title_link"]/div</arg>
+<arg>${ITEMS}[4]</arg>
+<arg>${ITEM5_DESC}</arg>
+<arg>${ITEMS_PRICE}[4]</arg>
+<arg>${ITEM5_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:43:58.286409" elapsed="2.059693"/>
+</kw>
+<kw name="Verify Cart Icon position changed" owner="resources">
+<kw name="Get Cart Icon Position" owner="resources">
+<kw name="Get Horizontal Position" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:00.352350" level="INFO">${cart_icon} = 1802</msg>
+<var>${cart_icon}</var>
+<arg>xpath://*[@id="shopping_cart_container"]</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:44:00.346102" elapsed="0.006248"/>
+</kw>
+<return>
+<value>${cart_icon}</value>
+<status status="PASS" start="2024-05-14T20:44:00.352350" elapsed="0.000000"/>
+</return>
+<msg time="2024-05-14T20:44:00.352350" level="INFO">${visual_cart_icon} = 1802</msg>
+<var>${visual_cart_icon}</var>
+<status status="PASS" start="2024-05-14T20:44:00.346102" elapsed="0.006248"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>int(${cart_icon})</arg>
+<arg>int(${visual_cart_icon})</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-14T20:44:00.352350" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:44:00.346102" elapsed="0.006248"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:00.353351" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:44:00.353351" elapsed="0.028218"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:00.381569" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:44:00.381569" elapsed="0.009105"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:44:00.352350" elapsed="0.039320"/>
+</kw>
+<kw name="View item" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:00.391670" level="INFO">Clicking element 'xpath://*[@id="item_3_title_link"]/div'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:44:00.391670" elapsed="0.026849"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T20:44:02.418843" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T20:44:00.418519" elapsed="2.000324"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:02.418843" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]' contains exact text 'Test.allTheThings() T-Shirt (Red)'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[1]</arg>
+<arg>${item_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.418843" elapsed="0.012381"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:02.431224" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]' contains exact text 'This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[2]</arg>
+<arg>${item_desc}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.431224" elapsed="0.007003"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:02.438227" level="INFO">Verifying element 'xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]' contains exact text '$15.99'.</msg>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[2]/div[3]</arg>
+<arg>${item_price}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.438227" elapsed="0.006481"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:02.447677" level="INFO">Current page contains element 'name:add-to-cart'.</msg>
+<arg>name:add-to-cart</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.444708" elapsed="0.002969"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:02.452661" level="INFO">${image_src} = https://www.saucedemo.com/static/media/red-tatt-1200x1500.30dadef4.jpg</msg>
+<var>${image_src}</var>
+<arg>xpath://*[@id="inventory_item_container"]/div/div/div[1]/img</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.447677" elapsed="0.004984"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${item_img}</arg>
+<arg>${image_src}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.453657" elapsed="0.000000"/>
+</kw>
+<arg>xpath://*[@id="item_3_title_link"]/div</arg>
+<arg>${ITEMS}[5]</arg>
+<arg>${ITEM6_DESC}</arg>
+<arg>${ITEMS_PRICE}[5]</arg>
+<arg>${ITEM6_IMG}</arg>
+<status status="PASS" start="2024-05-14T20:44:00.391670" elapsed="2.061987"/>
+</kw>
+<kw name="Verify Cart Icon position changed" owner="resources">
+<kw name="Get Cart Icon Position" owner="resources">
+<kw name="Get Horizontal Position" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:02.459691" level="INFO">${cart_icon} = 1802</msg>
+<var>${cart_icon}</var>
+<arg>xpath://*[@id="shopping_cart_container"]</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.453657" elapsed="0.006034"/>
+</kw>
+<return>
+<value>${cart_icon}</value>
+<status status="PASS" start="2024-05-14T20:44:02.459691" elapsed="0.000000"/>
+</return>
+<msg time="2024-05-14T20:44:02.460692" level="INFO">${visual_cart_icon} = 1802</msg>
+<var>${visual_cart_icon}</var>
+<status status="PASS" start="2024-05-14T20:44:02.453657" elapsed="0.007035"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>int(${cart_icon})</arg>
+<arg>int(${visual_cart_icon})</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.460692" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:44:02.453657" elapsed="0.007035"/>
+</kw>
+<kw name="Click Back to Products" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:02.460692" level="INFO">Clicking button 'id=back-to-products'.</msg>
+<arg>id=back-to-products</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.460692" elapsed="0.030147"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:02.490839" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
+<arg>class:title</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.490839" elapsed="0.008996"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:44:02.460692" elapsed="0.039143"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:49.812959" elapsed="12.686876"/>
+</kw>
+<kw name="Logout the page" owner="resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:02.500836" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.500836" elapsed="0.030202"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=logout_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.531038" elapsed="0.221239"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T20:44:02.752774" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
+<arg>id=logout_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.752277" elapsed="0.024574"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.776851" elapsed="0.006514"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:44:02.500836" elapsed="0.282529"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-14T20:44:02.783365" elapsed="2.106125"/>
+</kw>
+<status status="PASS" start="2024-05-14T20:43:41.321881" elapsed="23.568296"/>
+</test>
+<status status="PASS" start="2024-05-14T20:40:43.057428" elapsed="201.833747"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="View Detail Item Test">View Detail Item Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
